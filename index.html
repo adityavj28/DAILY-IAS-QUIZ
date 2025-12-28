@@ -46,6 +46,7 @@
             font-weight: 600;
             color: #2c3e50;
             line-height: 1.5;
+            white-space: pre-line; /* Preserves line breaks in questions */
         }
 
         .options-list {
@@ -120,7 +121,7 @@
 
     <div class="container">
         <h1>Daily IAS Prep</h1>
-        <p class="subtitle" id="date-display">Date: Dec 28, 2025</p>
+        <p class="subtitle" id="date-display">Date: Dec 29, 2025</p>
 
         <div id="quiz-area">
             <div class="question-box" id="question-text">
@@ -139,106 +140,166 @@
 
     <script>
         // ---------------------------------------------------------
-        // YOUR QUESTIONS (Jumbled Order)
+        // NEW JUMBLED QUESTIONS (16 Questions)
         // ---------------------------------------------------------
         const questions = [
             {
-                question: "Democracy's superior virtue lies in the fact that it calls into activity:",
+                question: "Which one of the following statements best reflects the Chief purpose of the 'Constitution' of a country?",
                 options: [
-                    "the intelligence and character of ordinary men and women.",
-                    "the methods for strengthening executive leadership.",
-                    "a superior individual with dynamism and vision.",
-                    "a band of dedicated party workers."
-                ],
-                answer: 0 // (a)
-            },
-            {
-                question: "What was the exact constitutional status of India on 26th January, 1950?",
-                options: [
-                    "A Democratic Republic",
-                    "A Sovereign Democratic Republic",
-                    "A Sovereign Secular Democratic Republic",
-                    "A Sovereign Socialist Secular Democratic Republic"
-                ],
-                answer: 1 // (b)
-            },
-            {
-                question: "Which one of the following factors constitutes the best safeguard of liberty in a liberal democracy?",
-                options: [
-                    "A committed judiciary",
-                    "Centralization of powers",
-                    "Elected government",
-                    "Separation of powers"
-                ],
-                answer: 3 // (d)
-            },
-            {
-                question: "Constitutional government means:",
-                options: [
-                    "a representative government of a nation with federal structure",
-                    "a government whose Head enjoys nominal powers",
-                    "a government whose Head enjoys real powers",
-                    "a government limited by the terms of the Constitution"
-                ],
-                answer: 3 // (d)
-            },
-            {
-                question: "Consider the following statements in respect of the Constitution Day:\n\nStatement-I: The Constitution Day is celebrated on 26th November every year to promote constitutional values among citizens.\n\nStatement-II: On 26th November, 1949, the Constituent Assembly of India set up a Drafting Committee under the Chairmanship of Dr. B.R. Ambedkar to prepare a Draft Constitution of India.\n\nWhich one of the following is correct?",
-                options: [
-                    "Both Statement-I and Statement-II are correct and Statement-II is the correct explanation for Statement-I",
-                    "Both Statement-I and Statement-II are correct and Statement-II is not the correct explanation for Statement-I",
-                    "Statement-I is correct but Statement-II is incorrect",
-                    "Statement-I is incorrect but Statement-II is correct"
+                    "It determines the objective for the making of necessary laws.",
+                    "It enables the creation of political offices and a government.",
+                    "It defines and limits the powers of government.",
+                    "It secures social justice, social equality and social security"
                 ],
                 answer: 2 // (c)
             },
             {
-                question: "Which one of the following reflects the most appropriate relationship between law and liberty?",
+                question: "Under the Indian Constitution, concentration of wealth violates:",
                 options: [
-                    "If there are more laws, there is less liberty.",
-                    "If there are no laws, there is no liberty.",
-                    "If there is liberty, laws have to be made by the people.",
-                    "If laws are changed too often, liberty is in danger."
+                    "the Right to Equality",
+                    "the Directive Principles of State Policy",
+                    "the Right to Freedom",
+                    "the Concept of Welfare"
                 ],
                 answer: 1 // (b)
             },
             {
-                question: "We adopted parliamentary democracy based on the British model, but how does our model differ from that model?\n\n1. As regards legislation, the British Parliament is supreme or sovereign but in India, the power of the Parliament to legislate is limited.\n2. In India, matters related to the constitutionality of the Amendment of an Act of the Parliament are referred to the Constitution Bench by the Supreme Court.",
+                question: "Consider the following statements:\n1. According to the Constitution of India, the Central Government has a duty to protect States from internal disturbances.\n2. The Constitution of India exempts the States from providing legal counsel to person being held for preventive detention.\n3. According to the Prevention of Terrorism Act, 2002, confession of the accused before the police cannot be used as evidence.\n\nHow many of the above statements are correct?",
                 options: [
-                    "1 only",
-                    "2 only",
-                    "Both 1 and 2",
-                    "Neither 1 nor 2"
+                    "Only one",
+                    "Only two",
+                    "All three",
+                    "None"
                 ],
-                answer: 2 // (c)
+                answer: 0 // (a) Only statement 1 is correct
             },
             {
-                question: "In the context of polity, which one of the following would you accept as the most appropriate definition of liberty?",
-                options: [
-                    "Protection against the tyranny of political rulers",
-                    "Absence of restraints",
-                    "Opportunity to do whatever one likes",
-                    "Opportunity to develop oneself fully"
-                ],
-                answer: 3 // (d)
-            },
-            {
-                question: "Which of the following statements about the Ethics Committee in the Lok Sabha are correct?\n\n1. Initially it was an ad-hoc Committee.\n2. Only a Member of the Lok Sabha can make a complaint relating to unethical conduct of a member of the Lok Sabha.\n3. This Committee cannot take up any matter which is sub-judice.",
+                question: "Which of the following statements are correct about the Constitution of India?\n1. Powers of the Municipalities are given in Part IX A of the Constitution.\n2. Emergency provisions are given in Part XVIII of the Constitution.\n3. Provisions related to the amendment of the Constitution are given in Part XX of the Constitution.",
                 options: [
                     "1 and 2 only",
                     "2 and 3 only",
                     "1 and 3 only",
                     "1, 2 and 3"
                 ],
+                answer: 3 // (d)
+            },
+            {
+                question: "Which one of the following best defines the term ‘State’?",
+                options: [
+                    "A community of persons permanently occupying a definite territory independent of external control and possessing an organized government",
+                    "A politically organized people of a definite territory and possessing an authority to govern them, maintain law and order, protect their natural rights and safeguard their means of sustenance",
+                    "A number of persons who have been living in a definite territory for a very long time with their own culture, tradition and government",
+                    "A society permanently living in a definite territory with a central authority, an executive responsible to the central authority and an independent judiciary"
+                ],
+                answer: 0 // (a)
+            },
+            {
+                question: "The mind of the makers of the Constitution of India is reflected in which of the following?",
+                options: [
+                    "The Preamble",
+                    "The Fundamental Rights",
+                    "The Directive Principles of State Policy",
+                    "The Fundamental Duties"
+                ],
+                answer: 0 // (a)
+            },
+            {
+                question: "Consider the following statements regarding 'Right to the City':\n1. ‘Right to the City’ is an agreed human right and the UN-Habitat monitors the commitments made by each country in this regard.\n2. ‘Right to the City’ gives every occupant of the city the right to reclaim public spaces and public participation in the city.\n3. ‘Right to the City’ means that the State cannot deny any public service or facility to the unauthorized colonies in the city.\n\nWhich of the statements given above is / are correct?",
+                options: [
+                    "1 only",
+                    "3 only",
+                    "1 and 2",
+                    "2 and 3"
+                ],
                 answer: 2 // (c)
             },
             {
-                question: "Which of the following are regarded as the main feature of “Rule of Law”?\n\n1. Limitation of power\n2. Equality before the law\n3. People’s responsibility to the Government\n4. Liberty and civil rights",
+                question: "Under which of the following Articles of the Constitution of India, has the Supreme Court of India placed the Right to Privacy?",
                 options: [
-                    "1 and 3 only",
-                    "2 and 4 only",
-                    "1, 2 and 4 only",
-                    "1, 2, 3 and 4"
+                    "Article 15",
+                    "Article 16",
+                    "Article 19",
+                    "Article 21"
+                ],
+                answer: 3 // (d)
+            },
+            {
+                question: "The distribution of powers between the Centre and the States in the Indian Constitution is based on the scheme provided in the:",
+                options: [
+                    "Morley-Minto Reforms, 1909",
+                    "Montagu-Chelmsford Act, 1919",
+                    "Government of India Act, 1935",
+                    "Indian Independence Act, 1947"
+                ],
+                answer: 2 // (c)
+            },
+            {
+                question: "With reference to India, consider the following statements:\n1. There is only one citizenship and one domicile.\n2. A citizen by birth only can become the Head of State.\n3. A foreigner once granted citizenship cannot be deprived of it under any circumstances.\n\nWhich of the statements given above is / are correct?",
+                options: [
+                    "1 only",
+                    "2 only",
+                    "1 and 3",
+                    "2 and 3"
+                ],
+                answer: 0 // (a)
+            },
+            {
+                question: "If a particular area is brought under the Fifth Schedule of the Constitution of India, which one of the following statements best reflects the consequence of it?",
+                options: [
+                    "This would prevent the transfer of land of tribal people to non-tribal people.",
+                    "This would create a local self-governing body in that area.",
+                    "This would convert that area into a Union Territory.",
+                    "The State having such areas would be declared a Special Category State."
+                ],
+                answer: 0 // (a)
+            },
+            {
+                question: "Which one of the following in Indian polity is an essential feature that indicates that it is federal in character?",
+                options: [
+                    "The independence of the judiciary is safeguarded.",
+                    "The Union Legislature has elected representatives from constituent units.",
+                    "The Union Cabinet can have elected representatives from regional parties.",
+                    "The Fundamental Rights are enforceable by Courts of Law."
+                ],
+                answer: 0 // (a)
+            },
+            {
+                question: "In essence, what does 'Due Process of Law' mean?",
+                options: [
+                    "The principle of natural justice",
+                    "The procedure established by law",
+                    "Fair application of law",
+                    "Equality before law"
+                ],
+                answer: 2 // (c)
+            },
+            {
+                question: "What is the position of the Right to Property in India?",
+                options: [
+                    "Legal right available to citizens only",
+                    "Legal right available to any person",
+                    "Fundamental Right available to citizens only",
+                    "Neither Fundamental Right nor legal right"
+                ],
+                answer: 1 // (b)
+            },
+            {
+                question: "‘Right to Privacy’ is protected under which Article of the Constitution of India?",
+                options: [
+                    "Article 15",
+                    "Article 19",
+                    "Article 21",
+                    "Article 29"
+                ],
+                answer: 2 // (c)
+            },
+            {
+                question: "Which one of the following statements is correct as per the Constitution of India?",
+                options: [
+                    "Inter-State trade and commerce is a State subject under the State List.",
+                    "Inter-State migration is a State subject under the State List.",
+                    "Inter-State quarantine is a Union subject under the Union List.",
+                    "Corporation tax is a State subject under the State List."
                 ],
                 answer: 2 // (c)
             }
@@ -263,7 +324,7 @@
 
             const q = questions[currentQuestionIndex];
             
-            // Auto-numbering added here: (Current Index + 1) + ". " + Question Text
+            // Auto-numbering: (Current Index + 1) + ". " + Question Text
             questionText.innerText = (currentQuestionIndex + 1) + ". " + q.question;
             
             optionsContainer.innerHTML = "";
