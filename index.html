@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Daily IAS Prep</title>
     <style>
-        /* 1. BASIC STYLING - Clean and Simple */
+        /* 1. BASIC STYLING */
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: #f4f4f9;
@@ -41,10 +41,11 @@
 
         /* 2. QUESTION STYLING */
         .question-box {
-            font-size: 1.2em;
+            font-size: 1.1em;
             margin-bottom: 20px;
             font-weight: 600;
             color: #2c3e50;
+            line-height: 1.5;
         }
 
         .options-list {
@@ -62,8 +63,9 @@
             border-radius: 5px;
             text-align: left;
             cursor: pointer;
-            font-size: 1em;
+            font-size: 0.95em;
             transition: background 0.2s;
+            line-height: 1.4;
         }
 
         .option-btn:hover {
@@ -126,7 +128,7 @@
             </div>
 
             <div class="options-list" id="options-container">
-                </div>
+            </div>
         </div>
 
         <div class="nav-buttons">
@@ -137,25 +139,109 @@
 
     <script>
         // ---------------------------------------------------------
-        // PASTE YOUR 20 QUESTIONS BELOW THIS LINE
+        // YOUR QUESTIONS (Jumbled Order)
         // ---------------------------------------------------------
         const questions = [
             {
-                question: "1. The preamble of the Indian Constitution is based on which of the following?",
-                options: ["Objectives Resolution", "Government of India Act 1935", "Indian Independence Act 1947", "None of the above"],
-                answer: 0 // 0 means the first option is correct
+                question: "Democracy's superior virtue lies in the fact that it calls into activity:",
+                options: [
+                    "the intelligence and character of ordinary men and women.",
+                    "the methods for strengthening executive leadership.",
+                    "a superior individual with dynamism and vision.",
+                    "a band of dedicated party workers."
+                ],
+                answer: 0 // (a)
             },
             {
-                question: "2. Which river is known as the 'Sorrow of Bihar'?",
-                options: ["Ganga", "Kosi", "Son", "Gandak"],
-                answer: 1 // 1 means the second option is correct
+                question: "What was the exact constitutional status of India on 26th January, 1950?",
+                options: [
+                    "A Democratic Republic",
+                    "A Sovereign Democratic Republic",
+                    "A Sovereign Secular Democratic Republic",
+                    "A Sovereign Socialist Secular Democratic Republic"
+                ],
+                answer: 1 // (b)
             },
             {
-                question: "3. Who is the author of 'The Wealth of Nations'?",
-                options: ["Karl Marx", "Adam Smith", "John Keynes", "David Ricardo"],
-                answer: 1 
+                question: "Which one of the following factors constitutes the best safeguard of liberty in a liberal democracy?",
+                options: [
+                    "A committed judiciary",
+                    "Centralization of powers",
+                    "Elected government",
+                    "Separation of powers"
+                ],
+                answer: 3 // (d)
+            },
+            {
+                question: "Constitutional government means:",
+                options: [
+                    "a representative government of a nation with federal structure",
+                    "a government whose Head enjoys nominal powers",
+                    "a government whose Head enjoys real powers",
+                    "a government limited by the terms of the Constitution"
+                ],
+                answer: 3 // (d)
+            },
+            {
+                question: "Consider the following statements in respect of the Constitution Day:\n\nStatement-I: The Constitution Day is celebrated on 26th November every year to promote constitutional values among citizens.\n\nStatement-II: On 26th November, 1949, the Constituent Assembly of India set up a Drafting Committee under the Chairmanship of Dr. B.R. Ambedkar to prepare a Draft Constitution of India.\n\nWhich one of the following is correct?",
+                options: [
+                    "Both Statement-I and Statement-II are correct and Statement-II is the correct explanation for Statement-I",
+                    "Both Statement-I and Statement-II are correct and Statement-II is not the correct explanation for Statement-I",
+                    "Statement-I is correct but Statement-II is incorrect",
+                    "Statement-I is incorrect but Statement-II is correct"
+                ],
+                answer: 2 // (c)
+            },
+            {
+                question: "Which one of the following reflects the most appropriate relationship between law and liberty?",
+                options: [
+                    "If there are more laws, there is less liberty.",
+                    "If there are no laws, there is no liberty.",
+                    "If there is liberty, laws have to be made by the people.",
+                    "If laws are changed too often, liberty is in danger."
+                ],
+                answer: 1 // (b)
+            },
+            {
+                question: "We adopted parliamentary democracy based on the British model, but how does our model differ from that model?\n\n1. As regards legislation, the British Parliament is supreme or sovereign but in India, the power of the Parliament to legislate is limited.\n2. In India, matters related to the constitutionality of the Amendment of an Act of the Parliament are referred to the Constitution Bench by the Supreme Court.",
+                options: [
+                    "1 only",
+                    "2 only",
+                    "Both 1 and 2",
+                    "Neither 1 nor 2"
+                ],
+                answer: 2 // (c)
+            },
+            {
+                question: "In the context of polity, which one of the following would you accept as the most appropriate definition of liberty?",
+                options: [
+                    "Protection against the tyranny of political rulers",
+                    "Absence of restraints",
+                    "Opportunity to do whatever one likes",
+                    "Opportunity to develop oneself fully"
+                ],
+                answer: 3 // (d)
+            },
+            {
+                question: "Which of the following statements about the Ethics Committee in the Lok Sabha are correct?\n\n1. Initially it was an ad-hoc Committee.\n2. Only a Member of the Lok Sabha can make a complaint relating to unethical conduct of a member of the Lok Sabha.\n3. This Committee cannot take up any matter which is sub-judice.",
+                options: [
+                    "1 and 2 only",
+                    "2 and 3 only",
+                    "1 and 3 only",
+                    "1, 2 and 3"
+                ],
+                answer: 2 // (c)
+            },
+            {
+                question: "Which of the following are regarded as the main feature of “Rule of Law”?\n\n1. Limitation of power\n2. Equality before the law\n3. People’s responsibility to the Government\n4. Liberty and civil rights",
+                options: [
+                    "1 and 3 only",
+                    "2 and 4 only",
+                    "1, 2 and 4 only",
+                    "1, 2, 3 and 4"
+                ],
+                answer: 2 // (c)
             }
-            // Add more questions here...
         ];
         // ---------------------------------------------------------
 
@@ -167,22 +253,22 @@
         const nextBtn = document.getElementById("next-btn");
 
         function loadQuestion() {
-            // Check if quiz is finished
             if (currentQuestionIndex >= questions.length) {
                 questionText.innerText = "Daily Goal Completed! 🎉";
-                optionsContainer.innerHTML = `<p style='text-align:center'>Your Final Score: ${score} / ${questions.length}</p>`;
+                optionsContainer.innerHTML = `<p style='text-align:center; font-size: 1.2em;'>Your Final Score: ${score} / ${questions.length}</p>`;
                 nextBtn.style.display = "none";
                 scoreDisplay.style.display = "none";
                 return;
             }
 
-            // Load current question
             const q = questions[currentQuestionIndex];
-            questionText.innerText = q.question;
-            optionsContainer.innerHTML = ""; // Clear old options
-            nextBtn.disabled = true; // Disable next until answered
+            
+            // Auto-numbering added here: (Current Index + 1) + ". " + Question Text
+            questionText.innerText = (currentQuestionIndex + 1) + ". " + q.question;
+            
+            optionsContainer.innerHTML = "";
+            nextBtn.disabled = true; 
 
-            // Create buttons for options
             q.options.forEach((option, index) => {
                 const button = document.createElement("button");
                 button.innerText = option;
@@ -197,7 +283,6 @@
         function checkAnswer(selectedIndex, correctIndex, button) {
             const buttons = optionsContainer.getElementsByClassName("option-btn");
             
-            // Disable all buttons so she can't click twice
             for(let btn of buttons) {
                 btn.disabled = true;
                 btn.style.cursor = "default";
@@ -208,11 +293,10 @@
                 score++;
             } else {
                 button.classList.add("wrong");
-                // Highlight the correct answer
                 buttons[correctIndex].classList.add("correct");
             }
 
-            nextBtn.disabled = false; // Enable Next button
+            nextBtn.disabled = false;
         }
 
         function nextQuestion() {
@@ -220,7 +304,6 @@
             loadQuestion();
         }
 
-        // Initialize
         document.getElementById("date-display").innerText = new Date().toDateString();
         loadQuestion();
     </script>
