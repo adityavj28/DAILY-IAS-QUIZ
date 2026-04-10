@@ -5,131 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Daily IAS Prep</title>
     <style>
-        /* 1. BASIC STYLING */
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f4f4f9;
-            margin: 0;
-            padding: 20px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-        }
-
-        .container {
-            background-color: white;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-            max-width: 600px;
-            width: 100%;
-        }
-
-        h1 {
-            text-align: center;
-            color: #333;
-            margin-bottom: 5px;
-        }
-
-        .subtitle {
-            text-align: center;
-            color: #666;
-            margin-bottom: 25px;
-            font-size: 0.9em;
-        }
-
-        /* 2. QUESTION STYLING */
-        .question-box {
-            font-size: 1.1em;
-            margin-bottom: 20px;
-            font-weight: 600;
-            color: #2c3e50;
-            line-height: 1.5;
-            white-space: pre-line; /* Preserves line breaks in questions */
-        }
-
-        .options-list {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        .option-btn {
-            display: block;
-            width: 100%;
-            padding: 12px;
-            margin-bottom: 10px;
-            background-color: #e9ecef;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            text-align: left;
-            cursor: pointer;
-            font-size: 0.95em;
-            transition: background 0.2s;
-            line-height: 1.4;
-        }
-
-        .option-btn:hover {
-            background-color: #dbe2e8;
-        }
-
-        /* Colors for correct/wrong answers */
-        .correct {
-            background-color: #d4edda !important;
-            border-color: #c3e6cb !important;
-            color: #155724;
-        }
-
-        .wrong {
-            background-color: #f8d7da !important;
-            border-color: #f5c6cb !important;
-            color: #721c24;
-        }
-
-        /* 3. NAVIGATION BUTTONS */
-        .nav-buttons {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 20px;
-            border-top: 1px solid #eee;
-            padding-top: 20px;
-        }
-
-        .btn {
-            padding: 10px 20px;
-            background-color: #007bff;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 1em;
-        }
-
-        .btn:disabled {
-            background-color: #ccc;
-            cursor: not-allowed;
-        }
-
-        #score-display {
-            font-weight: bold;
-            color: #555;
-            align-self: center;
-        }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f4f4f9; margin: 0; padding: 20px; display: flex; justify-content: center; align-items: center; min-height: 100vh; }
+        .container { background-color: white; padding: 30px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); max-width: 600px; width: 100%; }
+        h1 { text-align: center; color: #333; margin-bottom: 5px; }
+        .subtitle { text-align: center; color: #666; margin-bottom: 25px; font-size: 0.9em; }
+        .question-box { font-size: 1.1em; margin-bottom: 20px; font-weight: 600; color: #2c3e50; line-height: 1.5; white-space: pre-line; }
+        .options-list { list-style-type: none; padding: 0; }
+        .option-btn { display: block; width: 100%; padding: 12px; margin-bottom: 10px; background-color: #e9ecef; border: 1px solid #ddd; border-radius: 5px; text-align: left; cursor: pointer; font-size: 0.95em; transition: background 0.2s; line-height: 1.4; }
+        .option-btn:hover { background-color: #dbe2e8; }
+        .correct { background-color: #d4edda !important; border-color: #c3e6cb !important; color: #155724; }
+        .wrong { background-color: #f8d7da !important; border-color: #f5c6cb !important; color: #721c24; }
+        .nav-buttons { display: flex; justify-content: space-between; margin-top: 20px; border-top: 1px solid #eee; padding-top: 20px; }
+        .btn { padding: 10px 20px; background-color: #007bff; color: white; border: none; border-radius: 5px; cursor: pointer; font-size: 1em; }
+        .btn:disabled { background-color: #ccc; cursor: not-allowed; }
+        #score-display { font-weight: bold; color: #555; align-self: center; }
     </style>
 </head>
 <body>
 
     <div class="container">
         <h1>Daily IAS Prep</h1>
-        <p class="subtitle" id="date-display">Date: Jan 03, 2026</p>
+        <p class="subtitle" id="date-display">Date: Loading...</p>
 
         <div id="quiz-area">
-            <div class="question-box" id="question-text">
-                Loading question...
-            </div>
-
-            <div class="options-list" id="options-container">
-            </div>
+            <div class="question-box" id="question-text">Loading question...</div>
+            <div class="options-list" id="options-container"></div>
         </div>
 
         <div class="nav-buttons">
@@ -140,370 +40,206 @@
 
     <script>
         // ---------------------------------------------------------
-        // NEW JUMBLED QUESTIONS (36 Questions)
+        // ONLY THE NEWEST TEXT DUMP QUESTIONS (JUMBLED)
         // ---------------------------------------------------------
         const questions = [
             {
-                question: "Consider the following statements:\n1. The Chairman and the Deputy Chairman of the Rajya Sabha are not the Members of that House.\n2. While the nominated members of the two Houses of the Parliament have no voting right in the Presidential election, they have the right to vote in the election of the Vice President.\n\nWhich of the statements given above is/are correct?",
-                options: [
-                    "1 only",
-                    "2 only",
-                    "Both 1 and 2",
-                    "Neither 1 nor 2"
-                ],
-                answer: 1 // (b)
+                question: "Which of the following organisms perform waggle dance for others of their kin to indicate the direction and the distance to a source of their food?",
+                options: ["Butterflies", "Dragonflies", "Honeybees", "Wasps"],
+                answer: 2
             },
             {
-                question: "With reference to the Parliament of India, consider the following statements:\n1. A private member's bill is a bill presented by a Member of Parliament who is not elected but only nominated by the President of India.\n2. Recently, a private member's bill has been passed in the Parliament of India for the first time in its history.\n\nWhich of the statements given above is/are correct?",
-                options: [
-                    "1 only",
-                    "2 only",
-                    "Both 1 and 2",
-                    "Neither 1 nor 2"
-                ],
-                answer: 3 // (d)
+                question: "Consider the following statements:\nStatement-I: Rainfall is one of the reasons for weathering of rocks.\nStatement-II: Rain water contains carbon dioxide in solution.\nStatement-III: Rain water contains atmospheric oxygen.\n\nWhich one of the following is correct in respect of the above statements?",
+                options: ["Both Statement-II and Statement-III are correct and both of them explain Statement-I", "Both Statement-II and Statement-III are correct, but only one of them explains Statement-I", "Only one of the Statements II and III is correct and that explains Statement-I", "Neither Statement-II nor Statement-III is correct"],
+                answer: 0
             },
             {
-                question: "Regarding Money Bill, which of the following statements is not correct?",
-                options: [
-                    "A bill shall be deemed to be a Money Bill if it contains only provisions related to imposition, abolition, remission, alteration or regulation of any tax.",
-                    "A Money Bill has the provisions for the custody of the Consolidated Fund of India or the Contingency Fund of India.",
-                    "A Money Bill is concerned with the appropriation of money out of the Contingency Fund of India.",
-                    "A Money Bill deals with the regulations of borrowings of money or giving of any guarantee by the Government of India."
-                ],
-                answer: 2 // (c)
+                question: "Consider following statements:\n1. Some mushrooms have medicinal properties.\n2. Some mushrooms have psycho-active properties.\n3. Some mushrooms have insecticidal properties.\n4. Some mushrooms have bioluminescent properties.\n\nHow many of the above statements are correct?",
+                options: ["Only one", "Only two", "Only three", "All four"],
+                answer: 3
             },
             {
-                question: "Consider the following statements:\n1. In the first Lok Sabha, the single largest party in the opposition was the Swatantra Party.\n2. In the Lok Sabha, a “Leader of the Opposition” was recognised for the first time in 1969.\n3. In the Lok Sabha, if the party does not have a minimum of 75 members, its leader cannot be recognised as the leader of opposition.\n\nWhich of the following statements given is/are correct?",
-                options: [
-                    "1 and 3 only",
-                    "2 only",
-                    "2 and 3 only",
-                    "1, 2 and 3"
-                ],
-                answer: 1 // (b)
+                question: "Which of the following have species that can establish symbiotic relationship with other organisms?\n1) Cnidarians\n2) Fungi\n3) Protozoa\n\nSelect the correct answer using the code given below:",
+                options: ["1 and 2 only", "2 and 3 only", "1 and 3 only", "1, 2 and 3"],
+                answer: 3
             },
             {
-                question: "The Parliament can make any law for whole or any part of India for implementing International Treaties:",
-                options: [
-                    "with the consent of all the States",
-                    "with the consent of the majority of States",
-                    "with the consent of the States concerned",
-                    "without the consent of any State"
-                ],
-                answer: 3 // (d)
+                question: "Consider the following pairs:\nCountry - Animal found in its natural habitat\n1. Brazil - Indri\n2. Indonesia - Elk\n3. Madagascar - Bonobo\n\nHow many of the pairs given above are correctly matched?",
+                options: ["Only one", "Only two", "All three", "None"],
+                answer: 3
             },
             {
-                question: "Consider the following statements:\n1. The Legislative Council of a State in India can be larger in size than half of the Legislative Assembly of that particular State.\n2. The Governor of a State nominates the Chairman of the Legislative Council of that particular State.\n\nWhich of the statements given above is/are correct?",
-                options: [
-                    "1 only",
-                    "2 only",
-                    "Both 1 and 2",
-                    "Neither 1 nor 2"
-                ],
-                answer: 3 // (d)
+                question: "Consider the following:\n1. Electromagnetic radiation\n2. Geothermal energy\n3. Gravitational force\n4. Plate movements\n5. Rotation of the earth\n6. Revolution of the earth\n\nWhich of the above are responsible for bringing dynamic changes on the surface of the earth?",
+                options: ["1, 2, 3, and 4 only", "1, 3, 5 and 6 only", "2, 4, 5, and 6 only", "1, 2, 3, 4, 5, and 6"],
+                answer: 3
             },
             {
-                question: "Consider the following statements regarding a No-Confidence Motion in India:\n1. There is no mention of No-Confidence Motion in the Constitution of India.\n2. A Motion of No-Confidence can be introduced in the Lok Sabha only.\n\nWhich of the statements given above is/are correct?",
-                options: [
-                    "1 only",
-                    "2 only",
-                    "Both 1 and 2",
-                    "Neither 1 nor 2"
-                ],
-                answer: 2 // (c)
+                question: "Assertion (A): The same face of the Moon is always presented to the Earth.\nReason (R): The Moon rotates about its own axis in 23 days which is about the same time that takes to orbit the Earth.",
+                options: ["Both (A) and (R) are individually true and R is the correct explanation of A", "Both (A) and (R) are individually true and R is not the correct explanation of A", "A is true but R is false", "A is false but R is true"],
+                answer: 2
             },
             {
-                question: "What is the difference between “vote-on-account” and “interim budget”?\n1. The provision of a “vote-on-account” is used by a regular Government, while an “interim budget” is a provision used by a caretaker Government.\n2. A “vote-on-account” only deals with the expenditure in the Government’s Budget, while an “interim budget” includes both expenditure and receipts.\n\nWhich of the statements given above is/are correct?",
-                options: [
-                    "1 only",
-                    "2 only",
-                    "Both 1 and 2",
-                    "Neither 1 nor 2"
-                ],
-                answer: 1 // (b)
+                question: "Which one of the following sets of elements was primarily responsible for the origin of life on the Earth?",
+                options: ["Hydrogen, Oxygen, Sodium", "Carbon, Hydrogen, Nitrogen", "Oxygen, Calcium, Phosphorus", "Carbon, Hydrogen, Potassium"],
+                answer: 1
             },
             {
-                question: "Which one of the Schedules of the Constitution of India contains provisions regarding the anti-defection?",
-                options: [
-                    "Second Schedule",
-                    "Fifth Schedule",
-                    "Eighth Schedule",
-                    "Tenth Schedule"
-                ],
-                answer: 3 // (d)
+                question: "Contour Bunding is a method of soil conservation used in?",
+                options: ["Desert margins, liable to strong wind action", "Low flat plains, close to stream courses, liable to flooding", "Scrublands, liable to spread of weed growth", "None of the above"],
+                answer: 3
             },
             {
-                question: "The Parliament of India acquires the powers to legislate on any items in the State List in the national interest if the resolution to that effect has been passed by the:",
-                options: [
-                    "Lok Sabha by a simple majority of its total membership",
-                    "Lok Sabha by a majority of not less than two-thirds of its total membership",
-                    "Rajya Sabha by a simple majority of its total membership",
-                    "Rajya Sabha by a majority of not less than two-thirds of its members present and voting"
-                ],
-                answer: 3 // (d)
+                question: "Consider the following kinds of organisms:\n1) Copepods\n2) Cyanobacteria\n3) Diatoms\n4) Foraminifera\n\nWhich of the above are primary producers in the food chains of oceans?",
+                options: ["1 and 2", "2 and 3", "3 and 4", "1 and 4"],
+                answer: 1
             },
             {
-                question: "All revenues received by the Union Government by way of taxes and other receipts for the conduct of Government business are credited to the:",
-                options: [
-                    "Contingency Fund of India",
-                    "Public Account",
-                    "Consolidated Fund of India",
-                    "Deposits and Advances Fund"
-                ],
-                answer: 2 // (c)
+                question: "A person stood alone in a desert on a dark night and wanted to reach his village which was situated 5 km east of the point where he was standing. He had no instruments to find the direction but he located the polestar. The most convenient way now to reach his village is to walk in the:",
+                options: ["Direction facing the polestar", "Direction opposite to the polestar", "Direction keeping the polestar to his left", "Direction keeping the polestar to his right"],
+                answer: 2
             },
             {
-                question: "Which of the following statements is/are correct?\n1. A bill pending in the Lok Sabha lapses on its prorogation.\n2. A bill pending in the Rajya Sabha, which has not been passed by the Lok Sabha, shall not lapse on the dissolution of the Lok Sabha.\n\nSelect the correct answer:",
-                options: [
-                    "1 only",
-                    "2 only",
-                    "Both 1 and 2",
-                    "Neither 1 nor 2"
-                ],
-                answer: 1 // (b)
+                question: "Ilmenite and rutile, abundantly available in certain coastal tracts of India, are rich sources of which one of the following?",
+                options: ["Aluminium", "Copper", "Iron", "Titanium"],
+                answer: 3
             },
             {
-                question: "Which of the following special powers have been conferred on the Rajya Sabha by the Constitution of India?",
-                options: [
-                    "To change the existing territory of a State and to change the name of a State.",
-                    "To pass a resolution empowering the Parliament to make laws in the State List and to create one or more All India Services.",
-                    "To amend the election procedure of the President and to determine the pension of the President after his/her retirement.",
-                    "To determine the functions of the Election Commission and to determine the number of Election Commissioners."
-                ],
-                answer: 1 // (b)
+                question: "What is the approximate mean velocity with which the Earth moves round the Sun in its orbit?",
+                options: ["20 km/s", "30 km/s", "40 km/s", "50 km/s"],
+                answer: 1
             },
             {
-                question: "In the context of India, which of the following principles is/are implied institutionally in the parliamentary government?\n1. Members of the Cabinet are Members of the Parliament.\n2. Ministers hold the office till they enjoy confidence in the Parliament.\n3. The Cabinet is headed by the Head of the State.\n\nSelect the correct answer using the code given below:",
-                options: [
-                    "1 and 2 only",
-                    "3 only",
-                    "2 and 3 only",
-                    "1, 2 and 3"
-                ],
-                answer: 0 // (a)
+                question: "Consider the following:\n1. Carabid beetles\n2. Centipedes\n3. Flies\n4. Termites\n5. Wasps\n\nParasitoid species are found in how many of the above kind of organisms?",
+                options: ["Only two", "Only three", "Only four", "All five"],
+                answer: 1
             },
             {
-                question: "Consider the following statements:\nThe Parliamentary Committee on Public Accounts (PAC):\n1. Consists of not more than 25 Members of the Lok Sabha.\n2. Scrutinises appropriation and finance accounts of Government.\n3. Examine the report of CAG.\n\nWhich of the statements given above is/are correct?",
-                options: [
-                    "1 only",
-                    "2 and 3 only",
-                    "3 only",
-                    "1, 2 and 3"
-                ],
-                answer: 1 // (b)
+                question: "Consider the following statements:\n1. Some species of turtles are herbivores.\n2. Some species of fish are herbivores.\n3. Some species of marine mammals are herbivores.\n4. Some species of snakes are viviparous.\n\nWhich of the statements given above is/are correct?",
+                options: ["1 and 3 only", "2, 3 and 4 only", "2 and 4 only", "1, 2, 3 and 4"],
+                answer: 3
             },
             {
-                question: "Consider the following statements:\n1. Parliament of India can place a particular law in the Ninth Schedule of the Constitution of India.\n2. The validity of law placed in the Ninth Schedule cannot be examined by any court and no Judgement can be made on it.\n\nWhich of the statements given above is/are correct?",
-                options: [
-                    "1 only",
-                    "2 only",
-                    "1 and 2 only",
-                    "Neither 1 nor 2"
-                ],
-                answer: 0 // (a)
+                question: "On 21st June, the Sun:",
+                options: ["Does not set below the horizon at the Arctic Circle", "Does not set below the horizon at Antarctic Circle", "Shines vertically overhead at noon on the Equator", "Shines vertically overhead at the Tropic of Capricorn"],
+                answer: 0
             },
             {
-                question: "In the Parliament of India, the purpose of an Adjournment Motion is:",
-                options: [
-                    "to allow a discussion on a definite matter of urgent public importance",
-                    "to let opposition members, collect information from the ministers",
-                    "to allow a reduction of specific amount in demand for grant",
-                    "to postpone the proceedings to check the inappropriate or violent behaviour on the part of some members"
-                ],
-                answer: 0 // (a)
+                question: "Consider the following statements:\n1. Lions do not have a particular breeding season.\n2. Unlike most other big cats, cheetahs do not roar.\n3. Unlike male lions, male leopards do not proclaim their territory by scent marking.\n\nWhich of the statements given above are correct?",
+                options: ["1 and 2 only", "2 and 3 only", "1 and 3 only", "1, 2 and 3"],
+                answer: 0
             },
             {
-                question: "Which of the following committees is the largest Committee of the Parliament?",
-                options: [
-                    "The Committee on Public Accounts",
-                    "The Committee on Estimates",
-                    "The Committee on Public Undertakings",
-                    "The Committee on Petitions"
-                ],
-                answer: 1 // (b)
+                question: "Which of the following pairs is/are correctly matched?\nTheory/Law : Associated Scientist\n1. Continental Drift: Edwin Hubble\n2. Expansion of Universe: Alfred Wegener\n3. Photoelectric Effect: Albert Einstein\n\nSelect the correct answer using the code given below:",
+                options: ["2 and 3 only", "3 only", "2 only", "1 only"],
+                answer: 1
             },
             {
-                question: "Consider the following statements:\n1. In the election for Lok Sabha or State Assembly, the winning candidate must get at least 50 per cent of the votes polled to be declared elected.\n2. According to the provisions laid down in the Constitution of India, in Lok Sabha, the Speaker's post goes to the majority party and the Deputy Speaker's to the Opposition.\n\nWhich of the statements given above is/are correct?",
-                options: [
-                    "1 only",
-                    "2 only",
-                    "Both 1 and 2",
-                    "Neither 1 nor 2"
-                ],
-                answer: 3 // (d)
+                question: "Assertion (A): Existence of human life on Venus is highly improbable.\nReason (R): Venus has an extremely high level of carbon dioxide in its atmosphere.",
+                options: ["Both (A) and (R) are individually true and R is the correct explanation of A", "Both (A) and (R) are individually true and R is not the correct explanation of A", "A is true but R is false", "A is false but R is true"],
+                answer: 0
             },
             {
-                question: "Consider the following statements:\n1. The Speaker of the Legislative Assembly shall vacate his/her office if he/she ceases to be a member of the Assembly.\n2. Whenever the Legislative Assembly is dissolved, the Speaker shall vacate his/her office immediately.\n\nWhich of the statements given above is/are correct?",
-                options: [
-                    "1 only",
-                    "2 only",
-                    "Both 1 and 2",
-                    "Neither 1 nor 2"
-                ],
-                answer: 0 // (a)
+                question: "The organisms 'Cicada, Froghopper and Pond skater' are:",
+                options: ["Birds", "Fish", "Insects", "Reptiles"],
+                answer: 2
             },
             {
-                question: "A deadlock between the Lok Sabha and the Rajya Sabha calls for a joint sitting of the Parliament during the passage of:\n1. Ordinary Legislation\n2. Money Bill\n3. Constitution Amendment Bill\n\nSelect the correct answer using the code given below:",
-                options: [
-                    "1 only",
-                    "2 and 3 only",
-                    "1 and 3 only",
-                    "1, 2 and 3"
-                ],
-                answer: 0 // (a)
+                question: "Consider the following statements:\n1. In a seismograph, P waves recorded earlier than S waves.\n2. In P waves, the individual particles vibrate to and fro in the direction of wave propagation whereas in S waves, the particles vibrate up and down at right angles to the direction of wave propagation.\n\nWhich of the statements given above is/are correct?",
+                options: ["1 only", "2 only", "Both 1 and 2", "Neither 1 nor 2"],
+                answer: 2
             },
             {
-                question: "Out of the following statements, choose the one that brings out the principle underlying the Cabinet form of Government:",
-                options: [
-                    "An arrangement for minimising criticism against the Government whose responsibilities are complex and hard to carry out to the satisfaction of all",
-                    "A mechanism for speeding up the activities of the Government whose responsibilities are increasing day by day.",
-                    "A mechanism of parliamentary democracy for ensuring collective responsibility of the Government to the people.",
-                    "A device for strengthening the hands of the head of the Government whose hold over the people is in a state of decline."
-                ],
-                answer: 2 // (c)
+                question: "Which of the following are detritivores?\n1) Earthworms\n2) Jellyfish\n3) Millipedes\n4) Seahorses\n5) Woodlice\n\nSelect the correct answer using the code given below.",
+                options: ["1, 2 & 4 only", "2, 3, 4 & 5 only", "1, 3 & 5 only", "1, 2, 3, 4 & 5"],
+                answer: 2
             },
             {
-                question: "When the annual Union Budget is not passed by the Lok Sabha,",
-                options: [
-                    "the Budget is modified and presented again",
-                    "the Budget is referred to the Rajya Sabha for suggestions",
-                    "the Union Finance Minister is asked to resign",
-                    "the Prime Minister submits the resignation of Council of Ministers"
-                ],
-                answer: 3 // (d)
+                question: "The word ‘Denisovan’ is sometimes mentioned in media in reference to:",
+                options: ["Fossils of a kind of dinosaurs", "An early human species", "A cave system found in North-East India", "A geological period in the history of Indian subcontinent"],
+                answer: 1
             },
             {
-                question: "What will follow if a Money Bill is substantially amended by the Rajya Sabha?",
-                options: [
-                    "The Lok Sabha may still proceed with the Bill, accepting or not accepting the recommendations of the Rajya Sabha",
-                    "The Lok Sabha cannot consider the Bill further",
-                    "The Lok Sabha may send the Bill to the Rajya Sabha for reconsideration",
-                    "The President may call a joint sitting for passing the Bill"
-                ],
-                answer: 0 // (a)
+                question: "Consider the following:\n1. Pyroclastic debris\n2. Ash and dust\n3. Nitrogen compounds\n4. Sulphur compounds\n\nHow many of the above are products of volcanic eruptions?",
+                options: ["Only one", "Only two", "Only three", "All four"],
+                answer: 3
             },
             {
-                question: "The authorization for the withdrawal of funds from the Consolidated Fund of India must come from:",
-                options: [
-                    "The President of India",
-                    "The Parliament of India",
-                    "The Prime Minister of India",
-                    "The Union Finance Minister"
-                ],
-                answer: 1 // (b)
+                question: "In the structure of planet Earth, below the mantle, the core is mainly made up of which one of the following?",
+                options: ["Aluminium", "Chromium", "Iron", "Silicon"],
+                answer: 2
             },
             {
-                question: "Consider the following statements:\n1. The Rajya Sabha has no power either to reject or to amend a Money Bill.\n2. The Rajya Sabha cannot vote on the Demands for Grants.\n3. The Rajya Sabha cannot discuss the Annual Financial Statement.\n\nWhich of the statements given above is/are correct?",
-                options: [
-                    "1 only",
-                    "1 and 2 only",
-                    "2 and 3 only",
-                    "1, 2 and 3"
-                ],
-                answer: 1 // (b)
+                question: "On June 21 every year, which of the following latitude(s) experience(s) a sunlight of more than 12 hours?\n1. Equator\n2. Tropic of Cancer\n3. Tropic of Capricorn\n4. Arctic Circle\n\nSelect the correct answer using the code given below:",
+                options: ["1 only", "2 only", "3 and 4", "2 and 4"],
+                answer: 3
             },
             {
-                question: "There is a Parliamentary System of Government in India because the:",
-                options: [
-                    "Lok Sabha is elected directly by the people",
-                    "Parliament can amend the Constitution",
-                    "Rajya Sabha cannot be dissolved",
-                    "Council of Ministers is responsible to the Lok Sabha"
-                ],
-                answer: 3 // (d)
+                question: "Which of the is/are the possible consequences of heavy sand mining in riverbeds?\n1. Decreased salinity in the water\n2. Pollution of groundwater\n3. Lowering of the water table\n\nSelect the correct answer using the code below:",
+                options: ["1 only", "2 and 3 only", "1 and 3 only", "1, 2 and 3"],
+                answer: 1
             },
             {
-                question: "Consider the following statements:\n1. An amendment to the Constitution of India can be initiated by an introduction of a Bill in the Lok Sabha only.\n2. If such an amendment seeks to make changes in the federal character of the Constitution, the amendment also requires to be ratified by the Legislature of all the States of India.\n\nWhich of the statements given above is/are correct?",
-                options: [
-                    "1 only",
-                    "2 only",
-                    "Both 1 and 2",
-                    "Neither 1 nor 2"
-                ],
-                answer: 3 // (d)
+                question: "Consider the following:\n1. Butterflies\n2. Fish\n3. Frogs\n\nHow many of the above have poisonous species among them?",
+                options: ["Only one", "Only two", "All three", "None"],
+                answer: 2
             },
             {
-                question: "Consider the following statements:\n1. The Parliament (Prevention of Disqualification) Act, 1959 exempts several posts from disqualification on the grounds of ‘Office of Profit’.\n2. The above-mentioned Act was amended five times.\n3. The term ‘Office of Profit’ is well-defined in the Constitution of India.\n\nWhich of the statements given above is/are correct?",
-                options: [
-                    "1 and 2 only",
-                    "3 only",
-                    "2 and 3 only",
-                    "1, 2 and 3"
-                ],
-                answer: 0 // (a)
+                question: "Which of the following makes a tool with a stick to scrape insects from a hole in a tree or a log of wood?",
+                options: ["Fishing cat", "Orangutan", "Otter", "Sloth bear"],
+                answer: 1
             },
             {
-                question: "When a bill is referred to a joint sitting both the Houses of the Parliament, has to be passed by:",
-                options: [
-                    "a simple majority of member present and voting",
-                    "three-fourths majority of member present and voting",
-                    "two-thirds majority of the House",
-                    "absolute majority of the House"
-                ],
-                answer: 0 // (a)
+                question: "With reference to the soil conservation, consider the following practices:\n1. Crop rotation\n2. Sand fences\n3. Terracing\n4. Wind breaks\n\nWhich of the above are considered appropriate methods for soil conservation in India?",
+                options: ["1, 2 and 3 only", "2 and 4 only", "1, 3 and 4 only", "1, 2, 3 and 4"],
+                answer: 2
             },
             {
-                question: "Right to Privacy is protected as an intrinsic part of Right to Life and Personal Liberty. Which of the following in the Constitution of India correctly and appropriately imply the above statement?",
-                options: [
-                    "Article 14 and the provisions under the 42nd amendment to the Constitution.",
-                    "Article 17 and the Directive Principle of the State Policy in Part IV",
-                    "Article 21 and the freedoms guaranteed in Part III",
-                    "Article 24 and provisions under the 44th Amendments to the Constitution"
-                ],
-                answer: 2 // (c)
+                question: "In case of which one of the following biogeochemical cycles the weathering of rocks is the main source of release of nutrient to enter the cycle?",
+                options: ["Carbon cycle", "Nitrogen cycle", "Phosphorus cycle", "Sulphur cycle"],
+                answer: 2
             },
             {
-                question: "With reference to the Parliament of India, which of the following Parliamentary Committees scrutinises and reports to the House whether the powers to make regulations, rules, sub-rules, by-laws, etc. conferred by the Constitution or delegated by the Parliament are being properly exercised by the Executives within the scope of such delegation?",
-                options: [
-                    "Committee on Government Assurances",
-                    "Committee on Subordinate Legislation",
-                    "Committee on rules",
-                    "Business Advisory Committee"
-                ],
-                answer: 1 // (b)
+                question: "Which of the following phenomena might have influenced the evolution of organisms?\n1. Continental drift\n2. Glacial cycles\n\nSelect the correct answer using the code given below.",
+                options: ["1 only", "2 only", "Both 1 and 2", "Neither 1 nor 2"],
+                answer: 2
             },
             {
-                question: "For election to the Lok Sabha, a nomination paper can be filed by:",
-                options: [
-                    "anyone residing in India.",
-                    "a resident of the constituency from which the election is to be contested.",
-                    "any citizen of India whose name appears in the electoral roll of a constituency.",
-                    "any citizen of India"
-                ],
-                answer: 2 // (c)
+                question: "In the northern hemisphere, the longest day of the year normally occurs in the:",
+                options: ["First half of the month of June", "Second half of the month of June", "First half of the month of July", "Second half of the month of July"],
+                answer: 1
             },
             {
-                question: "Which of the following are the methods of Parliamentary control over public finance in India?\n1. Placing Annual Financial Statement before the Parliament.\n2. Withdrawal of moneys from Consolidated Fund of India only after passing the Appropriation Bill.\n3. Provisions of supplementary grants and vote-on-account.\n4. A periodic or at least a mid-year review of programmes of the Government against macroeconomic forecasts and expenditure by a Parliamentary BudgetOffice.\n5. Introducing Finance Bill in the Parliament.\n\nSelect the correct answer using the code given below:",
-                options: [
-                    "1, 2, 3 and 5 only",
-                    "1, 2 and 4 only",
-                    "3, 4 and 5 only",
-                    "1, 2, 3, 4 and 5"
-                ],
-                answer: 0 // (a)
+                question: "Which one of the following shows a unique relationship with an insect that has co-evolved with it and that is the only insect that can pollinate this tree?",
+                options: ["Fig", "Mahua", "Sandalwood", "Silk cotton"],
+                answer: 0
             },
             {
-                question: "Regarding the Office of the Lok Sabha Speaker, consider the following statements:\n1. He/She holds the office during the pleasure of the President.\n2. He/She need not be a member of the House at the time of his/her election but has to become a member of the House within six months from the date of his/her election.\n3. If he/she intends to resign, the letter of his/her resignation has to be addressed to the Deputy Speaker.\n\nWhich of the statements given above is/are correct?",
-                options: [
-                    "1 and 2 only",
-                    "3 only",
-                    "1, 2 and 3",
-                    "None"
-                ],
-                answer: 1 // (b)
+                question: "In order of their distance from the Sun, which of the following planets lie between Mars and Uranus?",
+                options: ["Earth and Jupiter", "Jupiter and Saturn", "Saturn and Earth", "Saturn and Neptune"],
+                answer: 1
             },
             {
-                question: "Consider the following statements:\n1. Union Territories are not represented in the Rajya Sabha.\n2. It is within the purview of the Chief Election Commissioner to adjudicate the election disputes.\n3. According to the Constitution of India, the Parliament consists of the Lok Sabha and the Rajya Sabha only.\n\nWhich of the statements given above is/are correct?",
-                options: [
-                    "1 only",
-                    "2 and 3",
-                    "1 and 3",
-                    "None"
-                ],
-                answer: 3 // (d)
+                question: "Consider the following plants:\n1. Groundnut\n2. Horse-gram\n3. Soybean\n\nHow many of the above belong to the pea family?",
+                options: ["Only one", "Only two", "All three", "None"],
+                answer: 2
+            },
+            {
+                question: "On the planet earth, most of the freshwater exists as ice caps and glaciers. Out of the remaining freshwater, the largest proportion?",
+                options: ["Is found in atmosphere as moisture and clouds", "Is found in freshwater lakes and rivers", "Exists as groundwater", "Exists as soil moisture"],
+                answer: 2
+            },
+            {
+                question: "Variations in the length of daytime and night-time from season to season are due to?",
+                options: ["The earth’s rotation on its axis", "The earth’s revolution round the sun in an elliptical manner", "Latitudinal position of the place", "Revolution of the earth on a titled axis"],
+                answer: 3
+            },
+            {
+                question: "“If rainforests and tropical forests are the lungs of the Earth, then surely wetlands function as its kidneys.” Which one of the following functions of wetlands best reflects the above statement?",
+                options: ["The water cycle in wetlands involves surface runoff, subsoil percolation and evaporation.", "Algae form the nutrient base upon which fish, crustaceans, molluscs, birds, reptiles and mammals thrive.", "Wetlands play a vital role in maintaining sedimentation balance and soil stabilization.", "Aquatic plants absorb heavy metals and excess nutrients."],
+                answer: 3
             }
         ];
+
         // ---------------------------------------------------------
 
         let currentQuestionIndex = 0;
@@ -524,7 +260,6 @@
 
             const q = questions[currentQuestionIndex];
             
-            // Auto-numbering: (Current Index + 1) + ". " + Question Text
             questionText.innerText = (currentQuestionIndex + 1) + ". " + q.question;
             
             optionsContainer.innerHTML = "";
