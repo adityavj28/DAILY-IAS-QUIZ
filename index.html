@@ -40,58 +40,18 @@
 
     <script>
         // ---------------------------------------------------------
-        // ONLY THE NEWEST TEXT DUMP QUESTIONS (JUMBLED)
+        // ONLY THE 36 NEWEST QUESTIONS (JUMBLED)
         // ---------------------------------------------------------
         const questions = [
-            {
-                question: "Which of the following organisms perform waggle dance for others of their kin to indicate the direction and the distance to a source of their food?",
-                options: ["Butterflies", "Dragonflies", "Honeybees", "Wasps"],
-                answer: 2
-            },
-            {
-                question: "Consider the following statements:\nStatement-I: Rainfall is one of the reasons for weathering of rocks.\nStatement-II: Rain water contains carbon dioxide in solution.\nStatement-III: Rain water contains atmospheric oxygen.\n\nWhich one of the following is correct in respect of the above statements?",
-                options: ["Both Statement-II and Statement-III are correct and both of them explain Statement-I", "Both Statement-II and Statement-III are correct, but only one of them explains Statement-I", "Only one of the Statements II and III is correct and that explains Statement-I", "Neither Statement-II nor Statement-III is correct"],
-                answer: 0
-            },
-            {
-                question: "Consider following statements:\n1. Some mushrooms have medicinal properties.\n2. Some mushrooms have psycho-active properties.\n3. Some mushrooms have insecticidal properties.\n4. Some mushrooms have bioluminescent properties.\n\nHow many of the above statements are correct?",
-                options: ["Only one", "Only two", "Only three", "All four"],
-                answer: 3
-            },
-            {
-                question: "Which of the following have species that can establish symbiotic relationship with other organisms?\n1) Cnidarians\n2) Fungi\n3) Protozoa\n\nSelect the correct answer using the code given below:",
-                options: ["1 and 2 only", "2 and 3 only", "1 and 3 only", "1, 2 and 3"],
-                answer: 3
-            },
-            {
-                question: "Consider the following pairs:\nCountry - Animal found in its natural habitat\n1. Brazil - Indri\n2. Indonesia - Elk\n3. Madagascar - Bonobo\n\nHow many of the pairs given above are correctly matched?",
-                options: ["Only one", "Only two", "All three", "None"],
-                answer: 3
-            },
-            {
-                question: "Consider the following:\n1. Electromagnetic radiation\n2. Geothermal energy\n3. Gravitational force\n4. Plate movements\n5. Rotation of the earth\n6. Revolution of the earth\n\nWhich of the above are responsible for bringing dynamic changes on the surface of the earth?",
-                options: ["1, 2, 3, and 4 only", "1, 3, 5 and 6 only", "2, 4, 5, and 6 only", "1, 2, 3, 4, 5, and 6"],
-                answer: 3
-            },
-            {
-                question: "Assertion (A): The same face of the Moon is always presented to the Earth.\nReason (R): The Moon rotates about its own axis in 23 days which is about the same time that takes to orbit the Earth.",
-                options: ["Both (A) and (R) are individually true and R is the correct explanation of A", "Both (A) and (R) are individually true and R is not the correct explanation of A", "A is true but R is false", "A is false but R is true"],
-                answer: 2
-            },
             {
                 question: "Which one of the following sets of elements was primarily responsible for the origin of life on the Earth?",
                 options: ["Hydrogen, Oxygen, Sodium", "Carbon, Hydrogen, Nitrogen", "Oxygen, Calcium, Phosphorus", "Carbon, Hydrogen, Potassium"],
                 answer: 1
             },
             {
-                question: "Contour Bunding is a method of soil conservation used in?",
-                options: ["Desert margins, liable to strong wind action", "Low flat plains, close to stream courses, liable to flooding", "Scrublands, liable to spread of weed growth", "None of the above"],
+                question: "With reference to the soil conservation, consider the following practices:\n1. Crop rotation\n2. Sand fences\n3. Terracing\n4. Wind breaks\n\nWhich of the above are considered appropriate methods for soil conservation in India?",
+                options: ["1, 2 and 3 only", "2 and 4 only", "1, 3 and 4 only", "1, 2, 3 and 4"],
                 answer: 3
-            },
-            {
-                question: "Consider the following kinds of organisms:\n1) Copepods\n2) Cyanobacteria\n3) Diatoms\n4) Foraminifera\n\nWhich of the above are primary producers in the food chains of oceans?",
-                options: ["1 and 2", "2 and 3", "3 and 4", "1 and 4"],
-                answer: 1
             },
             {
                 question: "A person stood alone in a desert on a dark night and wanted to reach his village which was situated 5 km east of the point where he was standing. He had no instruments to find the direction but he located the polestar. The most convenient way now to reach his village is to walk in the:",
@@ -99,34 +59,9 @@
                 answer: 2
             },
             {
-                question: "Ilmenite and rutile, abundantly available in certain coastal tracts of India, are rich sources of which one of the following?",
-                options: ["Aluminium", "Copper", "Iron", "Titanium"],
-                answer: 3
-            },
-            {
-                question: "What is the approximate mean velocity with which the Earth moves round the Sun in its orbit?",
-                options: ["20 km/s", "30 km/s", "40 km/s", "50 km/s"],
-                answer: 1
-            },
-            {
-                question: "Consider the following:\n1. Carabid beetles\n2. Centipedes\n3. Flies\n4. Termites\n5. Wasps\n\nParasitoid species are found in how many of the above kind of organisms?",
-                options: ["Only two", "Only three", "Only four", "All five"],
-                answer: 1
-            },
-            {
-                question: "Consider the following statements:\n1. Some species of turtles are herbivores.\n2. Some species of fish are herbivores.\n3. Some species of marine mammals are herbivores.\n4. Some species of snakes are viviparous.\n\nWhich of the statements given above is/are correct?",
-                options: ["1 and 3 only", "2, 3 and 4 only", "2 and 4 only", "1, 2, 3 and 4"],
-                answer: 3
-            },
-            {
-                question: "On 21st June, the Sun:",
-                options: ["Does not set below the horizon at the Arctic Circle", "Does not set below the horizon at Antarctic Circle", "Shines vertically overhead at noon on the Equator", "Shines vertically overhead at the Tropic of Capricorn"],
-                answer: 0
-            },
-            {
-                question: "Consider the following statements:\n1. Lions do not have a particular breeding season.\n2. Unlike most other big cats, cheetahs do not roar.\n3. Unlike male lions, male leopards do not proclaim their territory by scent marking.\n\nWhich of the statements given above are correct?",
-                options: ["1 and 2 only", "2 and 3 only", "1 and 3 only", "1, 2 and 3"],
-                answer: 0
+                question: "In the structure of planet Earth, below the mantle, the core is mainly made up of which one of the following?",
+                options: ["Aluminium", "Chromium", "Iron", "Silicon"],
+                answer: 2
             },
             {
                 question: "Which of the following pairs is/are correctly matched?\nTheory/Law : Associated Scientist\n1. Continental Drift: Edwin Hubble\n2. Expansion of Universe: Alfred Wegener\n3. Photoelectric Effect: Albert Einstein\n\nSelect the correct answer using the code given below:",
@@ -134,111 +69,167 @@
                 answer: 1
             },
             {
-                question: "Assertion (A): Existence of human life on Venus is highly improbable.\nReason (R): Venus has an extremely high level of carbon dioxide in its atmosphere.",
-                options: ["Both (A) and (R) are individually true and R is the correct explanation of A", "Both (A) and (R) are individually true and R is not the correct explanation of A", "A is true but R is false", "A is false but R is true"],
-                answer: 0
-            },
-            {
-                question: "The organisms 'Cicada, Froghopper and Pond skater' are:",
-                options: ["Birds", "Fish", "Insects", "Reptiles"],
-                answer: 2
-            },
-            {
-                question: "Consider the following statements:\n1. In a seismograph, P waves recorded earlier than S waves.\n2. In P waves, the individual particles vibrate to and fro in the direction of wave propagation whereas in S waves, the particles vibrate up and down at right angles to the direction of wave propagation.\n\nWhich of the statements given above is/are correct?",
-                options: ["1 only", "2 only", "Both 1 and 2", "Neither 1 nor 2"],
-                answer: 2
-            },
-            {
-                question: "Which of the following are detritivores?\n1) Earthworms\n2) Jellyfish\n3) Millipedes\n4) Seahorses\n5) Woodlice\n\nSelect the correct answer using the code given below.",
-                options: ["1, 2 & 4 only", "2, 3, 4 & 5 only", "1, 3 & 5 only", "1, 2, 3, 4 & 5"],
-                answer: 2
-            },
-            {
-                question: "The word ‘Denisovan’ is sometimes mentioned in media in reference to:",
-                options: ["Fossils of a kind of dinosaurs", "An early human species", "A cave system found in North-East India", "A geological period in the history of Indian subcontinent"],
-                answer: 1
-            },
-            {
-                question: "Consider the following:\n1. Pyroclastic debris\n2. Ash and dust\n3. Nitrogen compounds\n4. Sulphur compounds\n\nHow many of the above are products of volcanic eruptions?",
-                options: ["Only one", "Only two", "Only three", "All four"],
-                answer: 3
-            },
-            {
-                question: "In the structure of planet Earth, below the mantle, the core is mainly made up of which one of the following?",
-                options: ["Aluminium", "Chromium", "Iron", "Silicon"],
-                answer: 2
-            },
-            {
-                question: "On June 21 every year, which of the following latitude(s) experience(s) a sunlight of more than 12 hours?\n1. Equator\n2. Tropic of Cancer\n3. Tropic of Capricorn\n4. Arctic Circle\n\nSelect the correct answer using the code given below:",
-                options: ["1 only", "2 only", "3 and 4", "2 and 4"],
-                answer: 3
-            },
-            {
-                question: "Which of the is/are the possible consequences of heavy sand mining in riverbeds?\n1. Decreased salinity in the water\n2. Pollution of groundwater\n3. Lowering of the water table\n\nSelect the correct answer using the code below:",
-                options: ["1 only", "2 and 3 only", "1 and 3 only", "1, 2 and 3"],
-                answer: 1
-            },
-            {
-                question: "Consider the following:\n1. Butterflies\n2. Fish\n3. Frogs\n\nHow many of the above have poisonous species among them?",
-                options: ["Only one", "Only two", "All three", "None"],
-                answer: 2
-            },
-            {
-                question: "Which of the following makes a tool with a stick to scrape insects from a hole in a tree or a log of wood?",
-                options: ["Fishing cat", "Orangutan", "Otter", "Sloth bear"],
-                answer: 1
-            },
-            {
-                question: "With reference to the soil conservation, consider the following practices:\n1. Crop rotation\n2. Sand fences\n3. Terracing\n4. Wind breaks\n\nWhich of the above are considered appropriate methods for soil conservation in India?",
-                options: ["1, 2 and 3 only", "2 and 4 only", "1, 3 and 4 only", "1, 2, 3 and 4"],
-                answer: 2
-            },
-            {
-                question: "In case of which one of the following biogeochemical cycles the weathering of rocks is the main source of release of nutrient to enter the cycle?",
-                options: ["Carbon cycle", "Nitrogen cycle", "Phosphorus cycle", "Sulphur cycle"],
-                answer: 2
-            },
-            {
-                question: "Which of the following phenomena might have influenced the evolution of organisms?\n1. Continental drift\n2. Glacial cycles\n\nSelect the correct answer using the code given below.",
-                options: ["1 only", "2 only", "Both 1 and 2", "Neither 1 nor 2"],
-                answer: 2
-            },
-            {
-                question: "In the northern hemisphere, the longest day of the year normally occurs in the:",
-                options: ["First half of the month of June", "Second half of the month of June", "First half of the month of July", "Second half of the month of July"],
-                answer: 1
-            },
-            {
-                question: "Which one of the following shows a unique relationship with an insect that has co-evolved with it and that is the only insect that can pollinate this tree?",
-                options: ["Fig", "Mahua", "Sandalwood", "Silk cotton"],
-                answer: 0
-            },
-            {
                 question: "In order of their distance from the Sun, which of the following planets lie between Mars and Uranus?",
                 options: ["Earth and Jupiter", "Jupiter and Saturn", "Saturn and Earth", "Saturn and Neptune"],
                 answer: 1
             },
             {
-                question: "Consider the following plants:\n1. Groundnut\n2. Horse-gram\n3. Soybean\n\nHow many of the above belong to the pea family?",
-                options: ["Only one", "Only two", "All three", "None"],
+                question: "What is the approximate mean velocity with which the Earth moves round the Sun in its orbit?",
+                options: ["20 km/s", "30 km/s", "40 km/s", "50 km/s"],
+                answer: 1
+            },
+            {
+                question: "Assertion (A): The same face of the Moon is always presented to the Earth.\nReason (R): The Moon rotates about its own axis in 23 days which is about the same time that takes to orbit the Earth.",
+                options: ["Both (A) and (R) are individually true and R is the correct explanation of A", "Both (A) and (R) are individually true and R is not the correct explanation of A", "A is true but R is false", "A is false but R is true"],
                 answer: 2
             },
             {
-                question: "On the planet earth, most of the freshwater exists as ice caps and glaciers. Out of the remaining freshwater, the largest proportion?",
-                options: ["Is found in atmosphere as moisture and clouds", "Is found in freshwater lakes and rivers", "Exists as groundwater", "Exists as soil moisture"],
+                question: "Assertion (A): Existence of human life on Venus is highly improbable.\nReason (R): Venus has an extremely high level of carbon dioxide in its atmosphere.",
+                options: ["Both (A) and (R) are individually true and R is the correct explanation of A", "Both (A) and (R) are individually true and R is not the correct explanation of A", "A is true but R is false", "A is false but R is true"],
+                answer: 0
+            },
+            {
+                question: "Consider the following statements:\n1. The axis of the earth magnetic field is inclined at 23 to the geographic axis of the earth.\n2. The earth’s magnetic pole in the northern hemisphere is located on a peninsula in northern Canada.\n3. Earth’s magnetic equator passes through Thumba in South India.\n\nWhich of the statements is/are correct?",
+                options: ["1, 2 and 3", "2 and 3", "2 only", "3 only"],
+                answer: 1
+            },
+            {
+                question: "Consider the following statements:\n1) Total land area of earth is approximately 1475 lakh square kilometres.\n2) Ratio of land area to water area of earth is approximately 1: 4.\n3) Maximum percentage of earth’s water is in the Pacific Ocean.\n\nWhich of the statements given above are correct?",
+                options: ["1 and 3", "2 and 3", "1 only", "3 only"],
+                answer: 0
+            },
+            {
+                question: "Which one of the following is the correct sequence of the given Continents in the decreasing order of their percentage of earth’s land?",
+                options: ["North America, Africa, South America, Europe", "Africa, North America, South America, Europe", "North America, Africa, Europe, South America", "Africa, North America, Europe, South America"],
+                answer: 1
+            },
+            {
+                question: "Which of the following cause earthquakes?\n1. Development of a fault\n2. Movement along a fault\n3. Impact produced by a volcanic eruption\n4. Folding of rocks",
+                options: ["1, 2 and 3", "2 and 4", "1, 3 and 4", "1, 2, 3 and 4"],
+                answer: 3
+            },
+            {
+                question: "Identify the correct order of the processes of soil- erosion from the following:",
+                options: ["Splash erosion, Sheet erosion, Rill erosion, Gully erosion", "Sheet erosion, Splash erosion, Gully erosion, Rill erosion", "Rill erosion, Gully erosion, Sheet erosion, Splash erosion", "Gully erosion, Rill erosion, Sheet erosion, Splash erosion"],
+                answer: 0
+            },
+            {
+                question: "Consider the following statements:\nI. Most magmas are a combination of liquid, solid and gas.\nII. Water vapour and carbon dioxide are the principal gases dissolved in a magma.\nIII. Basaltic magma is hotter than the silicic magma.\nIV. The magma solidified between sedimentary rocks in a horizontal position is known as dike.\n\nWhich of these statements are correct?",
+                options: ["I, II and III", "II, III and IV", "I and IV", "I, II and IV"],
+                answer: 0
+            },
+            {
+                question: "Who among the following rulers of Vijayanagara Empire constructed a large dam across Tungabhadra River and a canal-cum-aqueduct several kilometers long from the river to the capital city?",
+                options: ["Devaraya I", "Mallikarjuna", "Vira Vijaya", "Virupaksha"],
+                answer: 0
+            },
+            {
+                question: "In medieval India, the term “Fanam” referred to:",
+                options: ["Clothing", "Coins", "Ornaments", "Weapons"],
+                answer: 1
+            },
+            {
+                question: "Which of the following is the correct sequence in ascending order in terms of size?",
+                options: ["Paragana, Sarkar, Suba", "Sarkar, Paragana, Suba", "Suba, Sarkar, Paragana", "Paragana, Suba, Sarkar"],
+                answer: 0
+            },
+            {
+                question: "With reference to ‘Indian history, consider the following statements:\n1. The first Mongol invasion of India happened during the reign of Jalal-ud-din Khalji.\n2. During the reign of Ala-ud-din Khalji, one Mongol assault marched up to Delhi and besieged the city.\n3. Muhammad-bin-Tughlaq temporarily lost portions of north-west of his kingdom to Mongols.\n\nWhich of the statements given above is/are correct?",
+                options: ["1 and 2", "2 only", "1 and 3", "3 only"],
+                answer: 1
+            },
+            {
+                question: "Consider the following statements:\n1) It was during the reign of Iltutmish that Chengiz Khan reached the Indus in pursuit of the fugitive Khwarezm prince.\n2) It was during the reign of Muhammad bin Tughluq that Taimur occupied Multan and crossed the Indus.\n3) It was during the reign of Deva Raya II of Vijayanagara Empire that Vasco da Gama reached the coast of Kerala.\n\nWhich of the statements given above is/are correct?",
+                options: ["1 only", "1 and 2", "3 only", "2 and 3"],
+                answer: 0
+            },
+            {
+                question: "With reference to the history of India, consider the following pairs:\n1. Aurang: In-charge of treasury of the State\n2. Banian: Indian agent of the East India Company\n3. Mirasidar: Designated revenue payer to the State\n\nWhich of the pairs given above is/are correctly matched?",
+                options: ["1 and 2 only", "2 and 3 only", "3 only", "1, 2 and 3"],
+                answer: 1
+            },
+            {
+                question: "With reference to Indian history, which of the following were known as “Kulah-Daran”?",
+                options: ["Arab merchants", "Qalandars", "Persian calligraphists", "Sayyids"],
+                answer: 3
+            },
+            {
+                question: "Which of the following activities constitute a real sector in the economy?\n1. Farmers harvesting their crops\n2. Textile mills converting raw cotton into fabrics\n3. A commercial bank lending money to a trading company\n4. A corporate body issuing Rupee Denominated Bonds overseas\n\nSelect the correct answer using the codes given below:",
+                options: ["1 and 2", "2, 3 and 4 only", "1, 3 and 4 only", "1, 2, 3 and 4"],
+                answer: 0
+            },
+            {
+                question: "With reference to the Indian economy after the 1991 economic liberalization, consider the following statements:\n1. Worker productivity (Rs. per worker at 2004-05 prices) increased in urban areas while it decreased in rural areas.\n2. The percentage share of rural areas in the workforce steadily increased.\n3. In rural areas, the growth in non-farm economy increased.\n4. The growth rate in rural employment decreased.\n\nWhich of the statements given above is/are Correct?",
+                options: ["1 and 2 only", "3 and 4 only", "3 only", "1, 2 and 4 only"],
+                answer: 1
+            },
+            {
+                question: "Which among the following steps is most likely to be taken at the time of an economic recession?",
+                options: ["Cut in tax rates accompanied by increase in interest rate", "Increase in expenditure on public projects", "Increase in tax rates accompanied by reduction of interest rate", "Reduction of expenditure on public projects"],
+                answer: 1
+            },
+            {
+                question: "Consider the following statements:\n1. Purchasing Power Parity (PPP) exchange rates are calculated by comparing the prices of the same basket of goods and services in different countries.\n2. In terms of PPP dollars, India is the sixth largest economy in the world.\n\nWhich of the statements given above is/are correct?",
+                options: ["1 only", "2 only", "Both 1 and 2", "Neither 1 nor 2"],
+                answer: 0
+            },
+            {
+                question: "Other things remaining unchanged, market demand for a good might increase if:\n1) Price of its substitute increases\n2) Price of its complement increases\n3) The good is an inferior good and income of the consumers increases\n4) Its price falls\n\nWhich of the above statements are correct?",
+                options: ["1 and 4 only", "2, 3 and 4", "1, 3 and 4", "1, 2 and 3"],
+                answer: 0
+            },
+            {
+                question: "Which one of the following statements correctly describes the meaning of legal tender money?",
+                options: ["The money which is tendered in courts of law to defray the fee of legal cases", "The money which a creditor is under compulsion to accept in settlement of his claims", "The bank money in the form of cheques, drafts, bill of exchange, etc.", "The metallic money in circulation in a country"],
+                answer: 1
+            },
+            {
+                question: "If a commodity is provided free to the public by Government, then:",
+                options: ["The opportunity cost is zero.", "The opportunity cost is ignored.", "The opportunity cost is transferred from the consumers of the product to the tax paying public.", "The opportunity cost is transferred from the consumers of the product to the Government."],
                 answer: 2
             },
             {
-                question: "Variations in the length of daytime and night-time from season to season are due to?",
-                options: ["The earth’s rotation on its axis", "The earth’s revolution round the sun in an elliptical manner", "Latitudinal position of the place", "Revolution of the earth on a titled axis"],
+                question: "Increase in absolute and per capita real GNP do not connote a higher level of economic development, if:",
+                options: ["Industrial output fails to keep pace with agricultural output.", "Agricultural output fails to keep pace with industrial output.", "Poverty and unemployment increases.", "Imports grow faster than exports."],
+                answer: 2
+            },
+            {
+                question: "Despite being a high saving economy, capital formation may not result in significant increase in output due to:",
+                options: ["Weak administrative machinery", "Illiteracy", "High population density", "High capital-output ratio"],
                 answer: 3
             },
             {
-                question: "“If rainforests and tropical forests are the lungs of the Earth, then surely wetlands function as its kidneys.” Which one of the following functions of wetlands best reflects the above statement?",
-                options: ["The water cycle in wetlands involves surface runoff, subsoil percolation and evaporation.", "Algae form the nutrient base upon which fish, crustaceans, molluscs, birds, reptiles and mammals thrive.", "Wetlands play a vital role in maintaining sedimentation balance and soil stabilization.", "Aquatic plants absorb heavy metals and excess nutrients."],
-                answer: 3
+                question: "Which of the following has/have occurred in India after its liberalization of economic policies in 1991?\n1. Share of agriculture in GDP increased enormously.\n2. Share of India's exports in world trade increased.\n3. FDI inflows increased.\n4. India's foreign exchange reserves increased enormously.",
+                options: ["1 and 4 only", "2, 3 and 4 only", "2 and 3 only", "1, 2, 3 and 4"],
+                answer: 1
+            },
+            {
+                question: "With reference to India economy, consider the following statements:\n1. The rate of growth of real Gross Domestic Product has steadily increased in the last decade.\n2. The Gross Domestic Product at market prices (in rupees) has steadily increased in the last decade\n\nWhich of the statement given above is/are correct?",
+                options: ["1 only", "2 only", "Both 1 and 2", "Neither 1 nor 2"],
+                answer: 1
+            },
+            {
+                question: "The problem of international liquidity is related to the non-availability of:",
+                options: ["Goods and services", "Gold and silver", "Dollars and other hard currencies", "Exportable surplus"],
+                answer: 2
+            },
+            {
+                question: "A decrease in tax to GDP ratio of a country indicates which of the following?\n1. Slowing economic growth rates\n2. Less equitable distribution of national income",
+                options: ["1 only", "2 only", "Both 1 and 2", "Neither 1 nor 2"],
+                answer: 0
+            },
+            {
+                question: "Economic growth in country X will necessarily have to occur if?",
+                options: ["There is technical progress in the world economy", "There is population growth in X", "There is capital formation in X", "The volume of trade grows in the world economy"],
+                answer: 2
             }
         ];
+
+        // Shuffle the questions array so they are jumbled
+        for (let i = questions.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [questions[i], questions[j]] = [questions[j], questions[i]];
+        }
 
         // ---------------------------------------------------------
 
