@@ -40,199 +40,88 @@
 
     <script>
         // ---------------------------------------------------------
-        // LATEST BATCH QUESTIONS (JUMBLED) - 38 QUESTIONS
+        // ALL 68 QUESTIONS (Finance, Economy, Environment, Space, Biotech)
         // ---------------------------------------------------------
         const questions = [
-            {
-                question: "With reference to ancient India, Gautama Buddha was generally known by which of the following epithets?\n1. Nayaputta\n2. Shakyamuni\n3. Tathagata\n\nSelect the correct answer using the code given below:",
-                options: ["1 only", "2 and 3 only", "1, 2 and 3", "None of the above are epithets of Gautama Buddha"],
-                answer: 1
-            },
-            {
-                question: "With reference to Indian history, consider the following texts:\n1. Nettipakarana\n2. Parishishtaparvan\n3. Avadanashataka\n4. Trishashtilakshana Mahapurana\n\nWhich of the above are Jaina texts?",
-                options: ["1, 2 and 3", "2 and 4 only", "1, 3 and 4", "2, 3 and 4"],
-                answer: 1
-            },
-            {
-                question: "“Souls are not only the property of animal and plant life, but also of rocks, running water and many other natural objects not looked on as living by other religious sects.”\n\nThe above statement reflects one of the core beliefs of which one of the following religious sects of ancient India?",
-                options: ["Buddhism", "Jainism", "Shaivism", "Vaishnavism"],
-                answer: 1
-            },
-            {
-                question: "With reference to Indian history, consider the following pairs:\nHistorical person : Known as\n1. Aryadeva : Jaina Scholar\n2. Dignaga : Buddhist Scholar\n3. Nathamuni : Vaishnava scholar\n\nHow many pairs given above are correctly matched?",
-                options: ["None of the pairs", "Only one pair", "Only two pairs", "All three pairs"],
-                answer: 2
-            },
-            {
-                question: "In which one of the following regions was Dhanyakataka, which flourished as a prominent Buddhist center under the Mahasanghikas, located?",
-                options: ["Andhra", "Gandhara", "Kalinga", "Magadha"],
-                answer: 0
-            },
-            {
-                question: "The world’s second tallest statue in sitting pose of Ramanuja was inaugurated by the Prime Minister of India at Hyderabad recently. Which one of the following statements correctly represents the teachings of Ramanuja?",
-                options: ["The best means of salvation was devotion.", "Vedas are eternal, self-existent and wholly authoritative.", "Logical arguments were essential means for the highest bliss.", "Salvation was to be obtained through meditation."],
-                answer: 0
-            },
-            {
-                question: "With reference to the history of ancient India, which of the following statements is/are correct?\n1. Mitakshara was the civil law for upper castes and Dayabhaga was the civil law for lower castes.\n2. In the Mitakshara system, the sons can claim right to the property during the lifetime of the father, whereas in the Dayabhaga system, it is only after the death of the father that the sons can claim right to the property.\n3. The Mitakshara system deals with the matters related to the property held by male members only of a family, whereas the Dayabhaga system deals with the matters related to the property held by both male and female members of a family.\n\nSelect the correct answer using the code given below.",
-                options: ["1 and 2", "2 only", "1 and 3", "3 only"],
-                answer: 1
-            },
-            {
-                question: "With reference to revenue collection by Cornwallis, consider the following statements:\n1. Under the Ryotwari Settlement of revenue collection, the peasants were exempted from revenue payment in case of bad harvests or natural calamities.\n2. Under the Permanent Settlement in Bengal, if the Zamindar failed to pay his revenues to the state, on or before the fixed date, he would be removed from his Zamindari.\n\nWhich of the statements given above is/are correct?",
-                options: ["1 only", "2 only", "Both 1 and 2", "Neither 1 nor 2"],
-                answer: 1
-            },
-            {
-                question: "By which one of the following Acts was the Governor General of Bengal designated as the Governor General of India?",
-                options: ["The Regulating Act", "The Pitt’s India Act", "The Charter Act of 1793", "The Charter Act of 1833"],
-                answer: 3
-            },
-            {
-                question: "Consider the following statements about ‘the Charter Act of 1813’:\n1. It ended the trade monopoly of the East India Company in India except for trade in tea and trade with China.\n2. It asserted the sovereignty of the British Crown over the Indian territories held by the Company.\n3. The revenues of India were now controlled by the British Parliament.\n\nWhich of the statements given above are correct?",
-                options: ["1 and 2 only", "2 and 3 only", "1 and 3 only", "1, 2 and 3"],
-                answer: 0
-            },
-            {
-                question: "With reference to Indian history, which of the following statements is/are correct?\n1) The Nizamat of Arcot emerged out of Hyderabad State.\n2) The Mysore Kingdom emerged out of Vijayanagara Empire.\n3) Rohilkhand Kingdom was formed out of the territories occupied by Ahmad Shah Durrani.\n\nSelect the correct answer using the code given below.",
-                options: ["1 and 2", "2 only", "2 and 3", "3 only"],
-                answer: 0
-            },
-            {
-                question: "Which of the following statements correctly explains the impact of the Industrial Revolution on India during the first half of the nineteenth century?",
-                options: ["Indian handicrafts were ruined.", "Machines were introduced in the Indian textile industry in large numbers.", "Railways lines were laid in many parts of the country.", "Heavy duties were imposed on the imports of British manufactures."],
-                answer: 0
-            },
-            {
-                question: "Which of the following activities of Reserve Bank of India is considered to be part of ‘Sterilization’?",
-                options: ["Conducting ‘Open Market Operations’", "Oversight of settlement and payment systems", "Debt and cash management for Central and State Governments", "Regulating the functions of Non-banking Financial Institutions"],
-                answer: 0
-            },
-            {
-                question: "In India, which one of the following is responsible for maintaining price stability by controlling inflation?",
-                options: ["Department of Consumer Affairs", "Expenditure Management Commission", "Financial Stability and Development Council", "Reserve Bank of India"],
-                answer: 3
-            },
-            {
-                question: "With reference to the Indian economy, consider the following statements:\n1. If the inflation is too high, Reserve Bank of India (RBI) is likely to buy government securities.\n2. If the rupee is rapidly depreciating, RBI is likely to sell dollars in the market.\n3. If interest rates in the USA or European Union were to fall, that is likely to induce RBI to buy dollars.\n\nWhich of the statements given above are correct?",
-                options: ["1 and 2 only", "2 and 3 only", "1 and 3 only", "1, 2 and 3"],
-                answer: 1
-            },
-            {
-                question: "Consider the following statements:\n1. Tight monetary policy of US Federal Reserve could lead to capital flight\n2. Capital flight may increase the interest cost of firms with existing External Commercial Borrowings (ECBs).\n3. Devaluation of domestic currency decreases the currency risk associated with ECBs.\n\nWhich of the statements is correct?",
-                options: ["1 and 2 only", "2 and 3 only", "1 and 3 only", "1, 2 and 3"],
-                answer: 0
-            },
-            {
-                question: "With reference to the Indian economy, consider the following statements:\n1. An increase in Nominal Effective Exchange Rate (NEER) indicates the appreciation of rupee.\n2. An increase in the Real Effective Exchange Rate (REER) indicates an improvement in trade competitiveness.\n3. An increasing trend in domestic inflation relative to inflation in other countries is likely to cause an increasing divergence between NEER and REER.\n\nWhich of the above statements are correct?",
-                options: ["1 and 2 only", "2 and 3 only", "1 and 3 only", "1, 2 and 3"],
-                answer: 2
-            },
-            {
-                question: "Consider the following statements:\nThe effect of devaluation of a currency is that it necessarily\n1) Improves the competitiveness of the domestic exports in the foreign markets\n2) Increases the foreign value of domestic currency\n3) Improves the trade balance\n\nWhich of the above statement is/are correct?",
-                options: ["1 only", "1 and 2", "3 only", "2 and 3"],
-                answer: 0
-            },
-            {
-                question: "Which one of the following is likely to be the most inflationary in its effects?",
-                options: ["Repayment of public debt", "Borrowing from the public to finance a budget deficit", "Borrowing from the banks to finance a budget deficit", "Creation of new money to finance a budget deficit"],
-                answer: 3
-            },
-            {
-                question: "In the context of India, which of the following factors is/are contributor/contributors to reducing the risk of a currency crisis?\n1. The foreign currency earnings of India's IT sector\n2. Increasing the government expenditure\n3. Remittances from Indians abroad\n\nSelect the correct answer using the code given below:",
-                options: ["1 only", "1 and 3 only", "2 only", "1, 2 and 3"],
-                answer: 1
-            },
-            {
-                question: "The money multiplier in an economy increases with which one of the following?",
-                options: ["Increase in the cash Reserve Ration in the banks", "Increase in the Statutory Liquidity Ratio in the banks", "Increase in the banking habit of the people", "Increase in the population of the country"],
-                answer: 2
-            },
-            {
-                question: "With reference to Indian economy, demand-pull inflation can be caused/increased by which of the following?\n1) Expansionary policies\n2) Fiscal stimulus\n3) Inflation-indexing wages\n4) Higher purchasing power\n5) Rising interest rates\n\nSelect the correct answer using the code given below.",
-                options: ["1, 2 and 4 only", "3, 4 and 5 only", "1, 2, 3 and 5 only", "1, 2, 3, 4 and 5"],
-                answer: 0
-            },
-            {
-                question: "If another global financial crisis happens in the near future, which of the following actions/policies are most likely to give some immunity to India?\n1. Not depending on short-term foreign borrowings\n2. Opening up to more foreign banks\n3. Maintaining full capital account convertibility\n\nSelect the correct answer using the code given below:",
-                options: ["1 only", "1 and 2 only", "3 only", "1, 2 and 3"],
-                answer: 0
-            },
-            {
-                question: "If you withdraw ₹1,00,000 in cash from your Demand Deposit Account at your bank, the immediate effect on aggregate money supply in the economy will be:",
-                options: ["To reduce it by ₹1,00,000", "To increase it by ₹1,00,000", "To increase it by more than ₹1,00,000", "To leave it unchanged"],
-                answer: 3
-            },
-            {
-                question: "With reference to the rule/rules imposed by the Reserve Bank of India while treating foreign banks, consider the following statements:\n1. There is no minimum capital requirement for wholly owned banking subsidiaries in India.\n2. For wholly owned banking subsidiaries in India, at least 50% of the board members should be Indian nationals.\n\nWhich of the statements given above is/are correct?",
-                options: ["1 only", "2 only", "1 and 2", "neither 1 nor 2"],
-                answer: 1
-            },
-            {
-                question: "Consider the following statements:\nStatement I: Syndicated lending spreads the risk of borrower default across multiple lenders.\nStatement-II: The syndicated loan can be a fixed amount/lump sum of funds, but cannot be a credit line.\n\nWhich one of the following is correct in respect of the above statements?",
-                options: ["Statement-I and Statement-II are correct and Statement-II explains Statement-I", "Both Statement-I and Statement-II are correct, but Statement-II does not explain Statement-I", "Statement-I is correct, but Statement-II is incorrect", "Statement-I is incorrect, but Statement-II is correct"],
-                answer: 2
-            },
-            {
-                question: "Consider the following statements in respect of the digital rupee:\n1. It is a sovereign currency issued by the Reserve Bank of India (RBI) in alignment with its monetary policy.\n2. It appears as a liability on the RBI's balance sheet.\n3. It is insured against inflation by its very design.\n4. It is freely convertible against commercial bank money and cash.\n\nWhich of the statements given above are correct?",
-                options: ["1 and 2 only", "1 and 3 only", "2 and 4 only", "1, 2 and 4"],
-                answer: 3
-            },
-            {
-                question: "Consider the following statements with reference to India:\n1. According to the 'Micro, Small and Medium Enterprises Development (MSMED) Act, 2006', the 'medium enterprises' are those with investments in plant and machinery between ₹15 crore and ₹25 crore.\n2. All bank loans to the Micro, Small and Medium Enterprises qualify under the priority sector.\n\nWhich of the statements given above is/are correct?",
-                options: ["1 only", "2 only", "Both 1 and 2", "Neither 1 nor 2"],
-                answer: 1
-            },
-            {
-                question: "With reference to Central Bank digital currencies, consider the following statements:\n1. It is possible to make payments in a digital currency without using US dollar or SWIFT system.\n2. A digital currency can be distributed with a condition programmed into it such as a time-frame for spending it.\n\nWhich of the statements given above is/are correct?",
-                options: ["1 only", "2 only", "Both 1 and 2", "Neither 1 nor 2"],
-                answer: 2
-            },
-            {
-                question: "Consider the following statements:\n1. The Self-Help Group (SHG) programme was originally initiated by the State Bank of India by providing microcredit to the financially deprived.\n2. In an SHG, all members of a group take responsibility for a loan that an individual member takes.\n3. The Regional Rural Banks and Scheduled Commercial Banks support SHGs.\n\nHow many of the above statements are correct?",
-                options: ["Only one", "Only two", "All three", "None"],
-                answer: 1
-            },
-            {
-                question: "Consider the following statements:\n1. In India, credit rating agencies are regulated by the Reserve Bank of India.\n2. The rating agency popularly known as ICRA is a public limited company.\n3. Brickwork Ratings is an Indian credit rating agency.\n\nWhich of the statements given above are correct?",
-                options: ["1 and 2 only", "2 and 3 only", "1 and 3 only", "1, 2 and 3"],
-                answer: 1
-            },
-            {
-                question: "With reference to the ‘Banks Board Bureau (BBB)’, which of the following statements are correct?\n1. The Governor of RBI is the Chairman of BBB.\n2. BBB recommends for the selection of heads for Public Sector Banks.\n3. BBB helps the Public Sector Banks in developing strategies and capital raising plans.\n\nSelect the correct answer using the code given below:",
-                options: ["1 and 2 only", "2 and 3 only", "1 and 3 only", "1, 2 and 3"],
-                answer: 1
-            },
-            {
-                question: "Consider the following statements:\n1) The Governor of the Reserve Bank of India (RBI) is appointed by the Central Government.\n2) Certain provisions in the Constitution of India give the Central Government the right to issue directions to the RBI in public interest.\n3) The Governor of the RBI draws his power from the RBI Act.\n\nWhich of the above statements are correct?",
-                options: ["1 and 2 only", "2 and 3 only", "1 and 3 only", "1, 2 and 3"],
-                answer: 3
-            },
-            {
-                question: "With reference to urban cooperative banks in India consider the following statements:\n1) They are supervised and regulated by local boards set up by the state governments.\n2) They can issue equity shares and preference shares.\n3) They were brought under the purview of the Banking Regulation Act, 1949 through an Amendment in 1966.\n\nWhich of the statements given above is/are correct?",
-                options: ["1 only", "2 and 3 only", "1 and 3 only", "1, 2 and 3"],
-                answer: 1
-            },
-            {
-                question: "In India, the central bank's function as the 'lender of last resort' usually refers to which of the following?\n1) Lending to trade and industry bodies when they fail to borrow from other sources\n2) Providing liquidity to the banks having a temporary crisis\n3) Lending to governments to finance budgetary deficits\n\nSelect the correct answer using the code given below.",
-                options: ["1 and 2", "2 only", "2 and 3 only", "3 only"],
-                answer: 1
-            },
-            {
-                question: "In the context of the Indian economy, non-financial debt includes which of the following?\n1. Housing loans owed by households\n2. Amounts outstanding on credit cards\n3. Treasury bills\n\nSelect the correct answer using the code given below:",
-                options: ["1 only", "1 and 2 only", "3 only", "1, 2 and 3"],
-                answer: 3
-            },
-            {
-                question: "With reference to the Indian economy, consider the following statements:\n1. A share of the household financial savings goes towards government borrowings.\n2. Dated securities issued at market-related rates in auctions form a large component of internal debt.\n\nWhich of the above statements is/are correct?",
-                options: ["1 only", "2 only", "Both 1 and 2", "Neither 1 nor 2"],
-                answer: 2
-            },
-            {
-                question: "Along with the Budget, the Finance Minister also places other documents before the Parliament which include ‘The Macro Economic Framework Statement’. The aforesaid document is presented because this is mandated by:",
-                options: ["Long standing parliamentary convention", "Article 112 and Article 110(1) of the Constitution of India", "Article 113 of the Constitution of India", "Provisions of the Fiscal Responsibility and Budget Management Act, 2003"],
-                answer: 3
-            }
+            // --- BATCH 1: Finance / Markets (13 Questions) ---
+            { question: "With reference to the Indian economy, \"Collateral Borrowing and Lending Obligations\" are the instruments of:", options: ["Bond market", "Forex market", "Money market", "Stock market"], answer: 2 },
+            { question: "Consider the following:\n1. Exchange-Traded Funds (ETF)\n2. Motor vehicles\n3. Currency swap\n\nWhich of the above is/are considered financial instruments?", options: ["1 only", "2 and 3 only", "1, 2 and 3", "1 and 3 only"], answer: 3 },
+            { question: "Consider the following statements:\n1. In India, Non-Banking Financial Companies can access the Liquidity Adjustment Facility window of the Reserve Bank of India.\n2. In India, Foreign Institutional Investors can hold the Government Securities (G-Secs).\n3. In India, Stock Exchanges can offer separate trading platforms for debts.\n\nWhich of the statements given above is/are correct?", options: ["1 and 2 only", "3 only", "1, 2 and 3", "2 and 3 only"], answer: 3 },
+            { question: "In the context of finance, the term 'beta' refers to:", options: ["The process of simultaneous buying and selling of an asset from different platforms", "An investment strategy of a portfolio manager to balance risk versus reward", "A type of systemic risk that arises where perfect hedging is not possible", "A numeric value that measures the fluctuations of a stock to changes in the overall stock market"], answer: 3 },
+            { question: "In India, which of the following can trade in Corporate Bonds and Government Securities?\n1. Insurance Companies\n2. Pension Funds\n3. Retail Investors\n\nSelect the correct answer using the code given below:", options: ["1 and 2 only", "2 and 3 only", "1 and 3 only", "1, 2 and 3"], answer: 3 },
+            { question: "Consider the following markets:\n1. Government Bond Market\n2. Call Money Market\n3. Treasury Bill Market\n4. Stock Market\n\nHow many of the above are included in capital markets?", options: ["Only one", "Only two", "Only three", "All four"], answer: 1 },
+            { question: "With reference to the Indian economy, what are the advantages of 'Inflation-Indexed Bonds (IIBs)?\n1. Government can reduce the coupon rates on its borrowing by way of IIBs\n2. IIBs provide protection to the investors from uncertainty regarding inflation.\n3. The interest received as well as capital gains on IIBs are not taxable.\n\nWhich of the statements given above are correct?", options: ["1 and 2 only", "2 and 3 only", "1 and 3 only", "1, 2 and 3"], answer: 0 },
+            { question: "Which one of the following situations best reflects “Indirect Transfers” often talked about in the media recently with reference to India?", options: ["An Indian company investing in a foreign enterprise and paying taxes to the foreign country on the profits arising out of its investment", "A foreign company investing in India and paying taxes to the country of its base on the profits arising out of its investment", "An Indian company purchases tangible assets in a foreign country and sells such assets after their value increases and transfers the proceeds to India", "A foreign company transfers shares and such shares derive their substantial value from assets located in India"], answer: 3 },
+            { question: "With reference to Convertible Bonds, consider the following statements:\n1. As there is an option to exchange the bond for equity, Convertible Bonds pay a lower rate of interest.\n2. The option to convert to equity affords the bondholder a degree of indexation to rising consumer prices.\n\nWhich of the statements given above is/are correct?", options: ["1 only", "2 only", "Both 1 and 2", "Neither 1 nor 2"], answer: 2 },
+            { question: "Indian Government Bond Yields are influenced by which of the following?\n1) Actions of the United States Federal Reserve\n2) Actions of the Reserve Bank of India\n3) Inflation and short-term interest rates\n\nSelect the correct answer using the code given below.", options: ["1 and 2 only", "2 only", "3 only", "1, 2 and 3"], answer: 3 },
+            { question: "Consider the following:\n1) Foreign currency convertible bonds.\n2) Foreign institutional investment with certain conditions\n3) Global depository receipts\n4) Non-resident external deposits\n\nWhich of the above can be included in Foreign Direct Investments?", options: ["1, 2 and 3", "3 only", "2 and 4", "1 and 4"], answer: 0 },
+            { question: "With reference to India, consider the following statements:\n1) Retail investors through demat accounts can invest in 'Treasury Bills' and 'Government of India Debt Bonds' in the primary market.\n2) The 'Negotiated Dealing System-Order Matching' is a government securities trading platform of the Reserve Bank of India.\n3) The 'Central Depository Services Ltd'. is jointly promoted by the Reserved Bank of India and the Bombay Stock Exchange.\n\nWhich of the statements given above is/are correct?", options: ["1 only", "1 and 2 only", "3 only", "2 and 3 only"], answer: 1 },
+            { question: "With reference to the Indian economy, consider the following statements:\n1. 'Commercial Paper' is a short-term unsecured promissory note.\n2. 'Certificate of Deposit' is a long-term instrument issued by the Reserve Bank of India to a corporation.\n3. 'Call Money' is a short-term finance used for interbank transactions.\n4. 'Zero-Coupon Bonds' are the interest-bearing short-term bonds issued by the Scheduled Commercial Banks to corporations.\n\nWhich of the statements given above is/are correct?", options: ["1 and 2 only", "4 only", "1 and 3 only", "2, 3 and 4 only"], answer: 2 },
+
+            // --- BATCH 2: Economy / CSR (10 Questions) ---
+            { question: "With reference to Corporate Social Responsibility (CSR) rules in India, consider the following statements:\n1. CSR rules specify that expenditures that benefit the company directly or its employees will not be considered as CSR activities.\n2. CSR rules do not specify minimum spending on CSR activities.\n\nWhich of the statements given above is/are correct?", options: ["1 only", "2 only", "both 1 and 2", "Neither 1 nor 2"], answer: 0 },
+            { question: "Consider the following statements:\nStatement-I: Interest income from the deposits in Infrastructure Investment Trusts (InvITs) distributed to their investors is exempted from tax, but the dividend is taxable.\nStatement-II: InvITs are recognized as borrowers under the ‘Securitization and Reconstruction of Financial Assets and Enforcement of Security Interest Act, 2002’\n\nWhich of the following is correct in respect of the above statements?", options: ["Both Statement-I and Statement-II are correct and Statement-II is the correct explanation for Statement-I.", "Both Statement-I and Statement-II are correct and Statement-II is not the correct explanation for Statement-I.", "Statement-I is correct but Statement-II is incorrect.", "Statement-I is incorrect but Statement-II is correct."], answer: 3 },
+            { question: "Consider the investments in the following assets:\n1. Brand recognition\n2. Inventory\n3. Intellectual property\n4. Mailing list of clients\n\nHow many of the above are considered intangible investments?", options: ["Only one", "Only two", "Only three", "All four"], answer: 2 },
+            { question: "With reference to coal-based thermal power plants in India, consider the following statements:\n1. None of them uses seawater.\n2. None of them is set up in water-stressed district.\n3. None of them is privately owned.\n\nHow many of the above statements are correct?", options: ["Only one", "Only two", "All three", "None"], answer: 3 },
+            { question: "With reference to the expenditure made by an organisation or a company, which of the following statements is/are correct?\n1. Acquiring new technology is capital expenditure.\n2. Debt financing is considered capital expenditure, while equity financing is considered revenue expenditure.\n\nSelect the correct answer using the code given below:", options: ["1 only", "2 only", "Both 1 and 2", "Neither 1 nor 2"], answer: 0 },
+            { question: "In India, which one of the following compiles information on industrial disputes, closures, retrenchments and lay-offs in factories employing workers?", options: ["Central Statistics Office", "Department for Promotion of Industry and Internal Trade", "Labour Bureau", "National Technical Manpower Information System"], answer: 2 },
+            { question: "In India, what is the role of the Coal Controller’s Organization (CCO)?\n1. CCO is the major source of Coal Statistics in Government of India.\n2. It monitors progress of development of Captive Coal/Lignite blocks.\n3. It hears any objection to the Government’s notification relating to acquisition of coal-bearing areas.\n4. It ensures that coal mining companies deliver the coal to end users in the prescribed time.\n\nSelect the correct answer using the code given below:", options: ["1, 2 and 3", "3 and 4 only", "1 and 2 only", "1, 2 and 4"], answer: 0 },
+            { question: "What is the importance of the term \"Interest Coverage Ratio\" of a firm in India?\n1. It helps in understanding the present risk of a firm that a bank is going to give loan to.\n2. It helps in evaluating the emerging risk of a firm that a bank is going to give loan to.\n3. The higher a borrowing firm's level of Interest Coverage Ratio, the worse is its ability to service its debt.\n\nSelect the correct answer using the code given below:", options: ["1 and 2 only", "2 only", "1 and 3 only", "1, 2 and 3"], answer: 0 },
+            { question: "Consider the following statements:\n1. Petroleum and Natural Gas Regulatory Board (PNGRB) is the first regulatory body set up by the Government of India.\n2. One of the tasks of PNGRB is to ensure competitive markets for gas.\n3. Appeals against the decisions of PNGRB go before the Appellate Tribunals for Electricity.\n\nWhich of the statements given above are correct?", options: ["1 and 2 only", "2 and 3 only", "1 and 3 only", "1, 2 and 3"], answer: 1 },
+            { question: "Consider the following statements:\n1. Coal sector was nationalized by the Government of India under Indira Gandhi.\n2. Now, coal blocks are allocated on lottery basis.\n3. Till recently, India imported coal to meet the shortages of domestic supply, but now India is self-sufficient in coal production.\n\nWhich of the statements given above is/are correct?", options: ["1 only", "2 and 3 only", "3 only", "1, 2 and 3"], answer: 0 },
+
+            // --- BATCH 3: Environment / Fauna (15 Questions) ---
+            { question: "Consider the following statements:\nStatement I: The Indian Flying Fox is placed under the \"vermin\" category in the Wild Life (Protection) Act, 1972.\nStatement-II: The Indian Flying Fox feeds on the blood of other animals.\n\nWhich one of the following is correct in respect of the above statements?", options: ["Statement-I and Statement-II are correct and Statement-II explains Statement-I", "Both Statement-I and Statement-II are correct, but Statement-II does not explain Statement-I", "Statement-I is correct, but Statement-II is incorrect", "Statement-I is incorrect, but Statement-II is correct"], answer: 2 },
+            { question: "Consider the following:\n1. Cashew\n2. Papaya\n3. Red sanders\n\nHow many of the above trees are actually native to India?", options: ["Only one", "Only two", "All three", "None"], answer: 0 },
+            { question: "Consider the following trees:\n1. Jackfruit (Artocarpus heterophyllus)\n2. Mahua (Madhuca indica)\n3. Teak (Tectona grandis)\n\nHow many of the above are deciduous trees?", options: ["Only one", "Only two", "All three", "None"], answer: 1 },
+            { question: "Consider the following statements:\nStatement-I: Marsupials are not naturally found in India.\nStatement-II: Marsupials can thrive only in Montane grasslands with no predators.\n\nWhich of the following is correct in respect of the above statements?", options: ["Both Statement-I and Statement-II are correct and Statement-II is the correct explanation for Statement-I", "Both Statement-I and Statement-II are correct and Statement-II is not the correct explanation for Statement-I", "Statement-I is correct but Statement-II is incorrect", "Statement-I is incorrect but Statement-II is correct"], answer: 2 },
+            { question: "Consider the following Fauna:\n1. Lion-tailed Macaque\n2. Malabar Civet\n3. Sambar Deer\n\nHow many of the above are generally nocturnal or most active after sunset?", options: ["Only one", "Only two", "All three", "None"], answer: 0 },
+            { question: "Consider the following statements regarding the Indian squirrels:\n1. They build nests by making burrows in the ground.\n2. They store their food materials like nuts and seeds in the ground.\n3. They are omnivorous.\n\nHow many of the above statements are correct?", options: ["Only one", "Only two", "All three", "None"], answer: 1 },
+            { question: "Certain species of which one of the following organisms are well known as cultivators of fungi?", options: ["Ant", "Cockroach", "Crab", "Spider"], answer: 0 },
+            { question: "With reference to “Gucchi” sometimes mentioned in the news, consider the following statements:\n1. It is a fungus.\n2. It grows in some Himalayan Forest areas.\n3. It is commercially cultivated in the Himalayan foothills of north-eastern India.\n\nWhich of the statements given above is/are correct?", options: ["1 only", "3 only", "1 and 2", "2 and 3"], answer: 2 },
+            { question: "Which of the following is not a bird?", options: ["Golden Mahseer", "Indian Nightjar", "Spoonbill", "White Ibis"], answer: 0 },
+            { question: "“Biorock technology” is talked about in which one of the following situations?", options: ["Restoration of damaged coral reefs", "Development of building materials using plant residues", "Identification of areas for exploration/extraction of shale gas", "Providing salt licks for wild animals in forests/protected areas"], answer: 0 },
+            { question: "Consider the following animals:\n1) Hedgehog\n2) Marmot\n3) Pangolin\n\nTo reduce the chance of being captured by predators which of the above organisms rolls up/roll up and protects/protect its/their vulnerable parts?", options: ["1 and 2", "2 only", "3 only", "1 and 3"], answer: 3 },
+            { question: "Which one of the following is used in preparing a natural mosquito repellent?", options: ["Congress grass", "Elephant grass", "Lemon grass", "Nut grass"], answer: 2 },
+            { question: "Which one of the following is a filter feeder?", options: ["Catfish", "Octopus", "Oyster", "Pelican"], answer: 2 },
+            { question: "With reference to Indian elephants, consider the following statements:\n1. The leader of an elephant group is a female.\n2. The maximum gestation period can be 22 months.\n3. An elephant can normally go on calving till the age of 40 years only.\n4. Among the States in India, the highest elephant population is in Kerala.\n\nWhich of the statements given above is/are correct?", options: ["1 and 2 only", "2 and 4 only", "3 only", "1, 3 and 4 only"], answer: 0 },
+            { question: "With reference to India's biodiversity, Ceylon frogmouth, Coppersmith barbet, Gray-chinned minivet and White-throated redstart are:", options: ["Birds", "Primates", "Reptiles", "Amphibians"], answer: 0 },
+
+            // --- BATCH 4: Environment / Pollution (12 Questions) ---
+            { question: "With reference to Perfluoroalkyl and polyfluoroalkyl substances (PFAS) that are used in making many consumer products, consider the following statements:\n1. PFAS are found to be widespread in drinking water, food and food packaging materials.\n2. PFAS are not easily degraded in the environment.\n3. Persistent exposure to PFAS can lead to bioaccumulation in animal bodies.\n\nWhich of the statements given above are correct?", options: ["1 and 2 only", "2 and 3 only", "1 and 3 only", "1, 2 and 3"], answer: 3 },
+            { question: "Consider the following statements:\nStatement I: Many chewing gums found in the market are considered a source of environmental pollution.\nStatement-II: Many chewing gums contain plastic as gum base.\n\nWhich one of the following is correct in respect of the above statements?", options: ["Statement-I and Statement-II are correct and Statement-II explains Statement-I", "Both Statement-I and Statement-II are correct, but Statement-II does not explain Statement-I", "Statement-I is correct, but Statement-II is incorrect", "Statement-I is incorrect, but Statement-II is correct"], answer: 0 },
+            { question: "According to the Environmental Protection Agency (EPA), which one of the following is the largest source of sulphur dioxide emissions?", options: ["Locomotives using fossil fuels", "Ships using fossil fuels", "Extraction of metals from ores", "Power plants using fossil fuels"], answer: 3 },
+            { question: "\"Membrane Bioreactors\" are often discussed in the context of:", options: ["Assisted reproductive technologies", "Drug delivery nanotechnologies", "Vaccine production technologies", "Wastewater treatment technologies"], answer: 3 },
+            { question: "With reference to the role of biofilters in Recirculating Aquaculture System, consider the following statements:\n1. Biofilters provide waste treatment by removing uneaten fish feed.\n2. Biofilters convert ammonia present in fish waste to nitrate.\n3. Biofilters increase phosphorus as nutrient for fish in water.\n\nHow many of the statements given above are correct?", options: ["Only one", "Only two", "All three", "None"], answer: 1 },
+            { question: "Consider the following statements regarding mercury pollution:\n1. Gold mining activity is a source of mercury pollution in the world.\n2. Coal-based thermal power plants cause mercury pollution.\n3. There is no known safe level of exposure to mercury.\n\nHow many of the above statements are correct?", options: ["Only one", "Only two", "All three", "None"], answer: 2 },
+            { question: "Consider the following:\n1. Carbon monoxide\n2. Nitrogen oxide\n3. Ozone\n4. Sulphur dioxide\n\nExcess of which of the above in the environment is/are the cause(s) of acid rain?", options: ["1, 2 and 3", "2 and 4 only", "4 only", "1, 3 and 4"], answer: 1 },
+            { question: "In the context of WHO Air Quality Guidelines, consider the following statements:\n1. The 24-hour mean of PM 2.5 should not exceed 15 µg/m3 and annual mean of PM2.5 should not exceed 5µg/m3.\n2. In a year, the highest levels of ozone pollution occur during the periods of inclement weather.\n3. PM 10 can penetrate the lung barrier and enter the bloodstream.\n4. Excessive ozone in the air can trigger asthma.\n\nWhich of the statements given above are correct?", options: ["1, 3 and 4", "1 and 4 only", "2, 3 and 4", "1 and 2 only"], answer: 1 },
+            { question: "Consider the following statements:\n1. Other than those made by humans, nanoparticles do not exist in nature.\n2. Nanoparticles of some metallic oxides are used in the manufacture of some cosmetics.\n3. Nanoparticles of some commercial products which enter the environment are unsafe for humans.\n\nWhich of the statements given above is/are correct?", options: ["1 only", "3 only", "1 and 2", "2 and 3"], answer: 3 },
+            { question: "Magnetite particles suspected to cause neurodegenerative problems, are generated as environmental pollutants from which of the following?\n1) Brakes of motor vehicles\n2) Engines of motor vehicles\n3) Microwave stoves within homes\n4) Power plants\n5) Telephone lines\n\nSelect the correct answer using the code given below.", options: ["1, 2, 3 and 5 only", "1, 2 and 4 only", "3, 4 and 5 only", "1, 2, 3, 4 and 5"], answer: 1 },
+            { question: "'R2 Code of Practices' constitutes a tool available for promoting the adoption of:", options: ["Environmentally responsible practices in electronics recycling industry", "Ecological management of 'Wetlands of International Importance' under the Ramsar", "Sustainable practices in the cultivation of agricultural crops in degrade lands", "'Environmental Impact Assessment' in the exploitation of natural resources"], answer: 0 },
+            { question: "Why is there a concern about copper smelting plants?\n1) They may release lethal quantities of carbon monoxide into environment.\n2) The copper slag can cause the leaching of some heavy metals into environment.\n3) They may release sulphur dioxide as a pollutant.\n\nSelect the correct answer using the code given below.", options: ["1 and 2 only", "2 and 3 only", "1 and 3 only", "1, 2 and 3"], answer: 1 },
+
+            // --- BATCH 5: Astronomy (6 Questions) ---
+            { question: "Consider the following statements:\nStatement I: Giant stars live much longer than dwarf stars.\nStatement-II: Compared to dwarf stars, giant stars have greater rate of nuclear reactions.\n\nWhich one of the following is correct in respect of the above statements?", options: ["Statement-I and Statement-II are correct and Statement-II explains Statement-I", "Both Statement-I and Statement-II are correct, but Statement-II does not explain Statement-I", "Statement-I is correct, but Statement-II is incorrect", "Statement-I is incorrect, but Statement-II is correct"], answer: 3 },
+            { question: "If a major solar storm (solar-flare) reaches the Earth, which of the following are the possible effects on the Earth?\n1. GPS and navigation systems could fail.\n2. Tsunamis could occur at equatorial regions.\n3. Power grids could be damaged.\n4. Intense auroras could occur over much of the Earth.\n5. Forest fires could take place over much of the planet.\n6. Orbits of the satellites could be disturbed.\n7. Shortwave radio communication of the aircraft flying over polar regions could be interrupted.\n\nSelect the correct answer using the code given below:", options: ["1, 2, 4 and 5 only", "2, 3, 5, 6 and 7 only", "1, 3, 4, 6 and 7 only", "1, 2, 3, 4, 5, 6 and 7"], answer: 2 },
+            { question: "Consider the following pairs:\nObjects in space : Description\n1. Cepheids : Giant clouds of dust and gas in space\n2. Nebulae : Stars which brighten and dim periodically\n3. Pulsars : Neutron stars that are formed when massive stars run out of fuel and collapse\n\nHow many of the above pairs are correctly matched?", options: ["Only one", "Only two", "All three", "None"], answer: 3 },
+            { question: "Which one of the following countries has its own Satellite Navigation System?", options: ["Australia", "Canada", "Israel", "Japan"], answer: 3 },
+            { question: "Which one of the following statements best reflects the idea behind the “Fractional Orbital Bombardment System” often talked about in the media?", options: ["A hypersonic missile is launched into space to counter the asteroid approaching the Earth and explode it in space.", "A spacecraft lands on another planet after making several orbital motions.", "A missile is put into a stable orbit around the Earth and deorbits over a target on the Earth.", "A spacecraft moves along a comet with the same speed and places a probe on its surface"], answer: 2 },
+            { question: "Which one of the following is a reason why astronomical distances are measured in light-years?", options: ["Distances among stellar bodies do not change", "Gravity of stellar bodies does not change", "Light always travels in straight line", "Speed of light is always same"], answer: 3 },
+
+            // --- BATCH 6: Biotechnology (12 Questions) ---
+            { question: "Consider the following statements:\nStatement I: India does not import apples from the United States of America.\nStatement-II: In India, the law prohibits the import of Genetically Modified food without the approval of the competent authority.\n\nWhich one of the following is correct in respect of the above statements?", options: ["Statement-I and Statement-II are correct and Statement-II explains Statement-I", "Both Statement-I and Statement-II are correct, but Statement-II does not explain Statement-I", "Statement-I is correct, but Statement-II is incorrect", "Statement-I is incorrect, but Statement-II is correct"], answer: 3 },
+            { question: "In which of the following are hydrogels used?\n1. Controlled drug delivery in patients\n2. Mobile air-conditioning systems\n3. Preparation of industrial lubricants\n\nSelect the correct answer using the code given below:", options: ["1 only", "1 and 2 only", "2 and 3 only", "1, 2 and 3"], answer: 3 },
+            { question: "'Aerial metagenomics' best refers to which one of the following situations?", options: ["Collecting DNA samples from air in a habitat at one go", "Understanding the genetic makeup of avian species of a habitat", "Using air-borne devices to collect blood samples from moving animals", "Sending drones to inaccessible areas to collect plant and animal samples from land surfaces and water bodies"], answer: 0 },
+            { question: "'Microsatellite DNA' is used in the case of which one of the following?", options: ["Studying the evolutionary relationships among various species of fauna", "Stimulating 'stem cells' to transform into diverse functional tissues", "Promoting clonal propagation of horticulture plants", "Assessing the efficacy of drugs by conducting series of drug trials in a population"], answer: 0 },
+            { question: "DNA Barcoding can be a tool to:\n1. Assess the age of a plant or animal.\n2. Distinguish among species that look alike.\n3. Identify undesirable animal or plant materials in processed foods.\n\nWhich of the statements given above is/are correct?", options: ["1 only", "3 only", "1 and 2", "2 and 3"], answer: 3 },
+            { question: "In the context of vaccines manufactured to prevent COVID-19 pandemic, consider the following statements:\n1. The Serum Institute of India produced COVID-19 vaccine named Covishield using mRNA platform.\n2. Sputnik V vaccine is manufactured using vector-based platform.\n3. COVAXIN is an inactivated pathogen based vaccine.\n\nWhich of the statements given above are correct?", options: ["1 and 2 only", "2 and 3 only", "1 and 3 only", "1, 2 and 3"], answer: 1 },
+            { question: "Consider the following statements:\n1. Biofilms can form on medical implants within human tissues.\n2. Biofilms can form on food and food processing surfaces.\n3. Biofilms can exhibit antibiotic resistance.\n\nWhich of the statements given above are correct?", options: ["1 and 2 only", "2 and 3 only", "1 and 3 only", "1, 2 and 3"], answer: 3 },
+            { question: "Bollgard I and Bollgard II technologies are mentioned in the context of:", options: ["Clonal propagation of crop plants", "Developing genetically modified crop plants", "Production of plant growth substances", "Production of biofertilizers"], answer: 1 },
+            { question: "With reference to recent developments regarding ‘Recombinant Vector Vaccines’, consider the following statements:\n1) Genetic engineering is applied in the development of these vaccines.\n2) Bacteria and viruses are used as vectors.\n\nWhich of the statements given above is/are correct?", options: ["1 only", "2 only", "Both 1 and 2", "Neither 1 nor 2"], answer: 2 },
+            { question: "With reference to carbon nanotubes, consider the following statements:\n1. They can be used as carriers of drugs and antigens in the human body.\n2. They can be made into artificial blood capillaries for an injured part of the human body.\n3. They can be used in biochemical sensors.\n4. Carbon nanotubes are biodegradable.\n\nWhich of the statements given above are correct?", options: ["1 and 2 only", "2, 3 and 4 only", "1, 3 and 4 only", "1, 2, 3 and 4"], answer: 2 },
+            { question: "Consider the following statements:\n1. Genetic changes can be introduced in the cells that produce eggs or sperms of a prospective parent.\n2. A person’s genome can be edited before birth at the early embryonic stage.\n3. Human induced pluripotent stem cells can be injected into the embryo of a pig.\n\nWhich of the statements given above is/are correct?", options: ["1 only", "2 and 3 only", "2 only", "1, 2 and 3"], answer: 3 },
+            { question: "What is the importance of using Pneumococcal Conjugate Vaccines in India?\n1. These vaccines are effective against pneumonia as well as meningitis and sepsis.\n2. Dependence on antibiotics that are not effective against drug-resistant bacteria can be reduced.\n3. These vaccines have no side effects and cause no allergic reactions.\n\nSelect the correct answer using the code given below:", options: ["1 only", "1 and 2 only", "3 only", "1, 2 and 3"], answer: 1 }
         ];
 
         // Shuffle the questions array so they are jumbled
